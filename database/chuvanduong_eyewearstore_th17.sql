@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2018 at 07:11 PM
+-- Generation Time: Apr 25, 2018 at 02:54 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -88,7 +88,11 @@ INSERT INTO `chitiethoadon` (`id_hoadon`, `id_dh`, `status`, `create_time`, `upd
 (1, 1, 1, '2018-03-26 13:06:35', NULL),
 (2, 2, 1, '2018-03-26 13:06:38', NULL),
 (3, 4, 1, '2018-03-26 13:06:41', NULL),
-(4, 5, 1, '2018-03-26 13:06:43', NULL);
+(4, 5, 1, '2018-03-26 13:06:43', NULL),
+(5, 8, 1, '2018-04-21 08:18:16', '0000-00-00 00:00:00'),
+(6, 7, 1, '2018-04-21 08:18:20', '0000-00-00 00:00:00'),
+(7, 7, 1, '2018-04-21 08:18:22', '0000-00-00 00:00:00'),
+(8, 7, 1, '2018-04-21 08:18:22', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -97,7 +101,7 @@ INSERT INTO `chitiethoadon` (`id_hoadon`, `id_dh`, `status`, `create_time`, `upd
 --
 
 CREATE TABLE `donhang` (
-  `id_dh` int(11) NOT NULL,
+  `id_hd` int(11) NOT NULL,
   `id_kinh` int(10) UNSIGNED NOT NULL,
   `TenKH` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `SDT` int(11) NOT NULL,
@@ -115,13 +119,15 @@ CREATE TABLE `donhang` (
 -- Dumping data for table `donhang`
 --
 
-INSERT INTO `donhang` (`id_dh`, `id_kinh`, `TenKH`, `SDT`, `Email`, `DiaChi`, `GhiChu`, `SoLuong`, `ThanhTien`, `TrangThai`, `create_time`, `update_time`) VALUES
+INSERT INTO `donhang` (`id_hd`, `id_kinh`, `TenKH`, `SDT`, `Email`, `DiaChi`, `GhiChu`, `SoLuong`, `ThanhTien`, `TrangThai`, `create_time`, `update_time`) VALUES
 (1, 1, 'duongcv', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang nhanh', 100, 6900000, 1, '2018-03-26 13:10:26', '2018-03-26 13:10:29'),
 (2, 2, 'duongcv', 964014502, 'duongcv@gmail.com', 'hanoi', 'dathang', 100, 69000000, 1, '2018-03-26 13:10:20', '2018-03-26 13:10:23'),
 (3, 3, 'duongcv2', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang nhanh', 1000, 6900000, 1, '2018-03-26 13:10:13', '2018-03-26 13:10:17'),
 (4, 2, 'duongcv4', 964014502, 'duongcv@gmail.com', 'hanoi', 'dathang', 2, 12000000, 1, '2018-03-26 13:10:06', '2018-03-26 13:10:10'),
-(5, 21, 'duongcv3', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 0, '2018-03-26 13:10:01', '2018-03-26 13:10:03'),
-(6, 21, 'duongcv5', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(5, 21, 'duongcv3', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 1, '2018-03-26 13:10:01', '2018-03-26 13:10:03'),
+(6, 21, 'duongcv5', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(7, 8, 'duongcv', 964014502, 'duongcv1006@gmail.com', 'hanoij', 'dat hanh nhanh', 2, 2000000, 2, '2018-04-20 03:32:25', '0000-00-00 00:00:00'),
+(8, 11, 'duongcv', 964014502, 'duongcv1006@gmail.com', 'hanoij', 'dat hanh nhanh', 1, 1000000, 2, '2018-04-20 03:32:25', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -150,14 +156,17 @@ CREATE TABLE `kinh` (
 --
 
 INSERT INTO `kinh` (`id`, `TenKinh`, `id_nsx`, `id_npp`, `HinhAnh`, `GiaCu`, `GiaMoi`, `id_loai`, `status`, `SoLuong`, `SoLuotXem`, `create_time`, `date_time`) VALUES
-(1, '&lt;br /&gt;&lt;b&gt;Notice&lt;/b&gt;:  Undefined index: TenKinh in &lt;b&gt;C:\\xampp\\htdocs\\admin\\admin\\view\\sanpham\\sua_sanpham.php&lt;/b&gt; on line &lt;b&gt;34&lt;/b&gt;&lt;br /&gt;', '1', 1, 'kieu_kinh_1.1.jpg', 1, 0, 0, 1, 0, 0, '0000-00-00 00:00:00', '2018-04-10 16:30:16'),
-(2, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ1', '1', 3, 'kieu_kinh_1.1.jpg', 11, 3, 1, 1, 1, 0, '0000-00-00 00:00:00', '2018-04-10 16:59:57'),
-(3, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ1', '1', 1, 'kieu_kinh_1.jpg', 0, 1, 1, 1, 1, 0, '0000-00-00 00:00:00', '2018-04-10 17:00:43'),
-(4, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ22', '1', 1, 'kieu_kinh_1.1.jpg', 0, 0, 1, 1, 1, 0, '0000-00-00 00:00:00', '2018-04-12 05:14:14'),
-(5, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ2', '1', 4, 'kieu_kinh_2.2.jpg', 1, 4, 1, 1, 1, 0, '0000-00-00 00:00:00', '2018-04-10 17:00:10'),
-(6, 'PORSCHE- 18K- P8499 - K&Iacute;NH THỜI TRANG NAM', '1', 3, 'kieu_kinh_1.2.jpg', 0, 321321, 3, 1, 321, 0, '2018-04-10 16:15:51', '2018-04-11 20:54:05'),
-(7, 'PORSCHE- 18K- P8499 - K&Iacute;NH THỜI TRANG NAM1', '3', 3, '', 0, 2147483647, 3, 1, 321, 0, '2018-04-10 16:16:39', '2018-04-11 20:53:14'),
-(8, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ1', '1', 1, 'kieu_kinh_1.jpg', 0, 0, 2, 1, 321, 0, '2018-04-10 16:17:25', '2018-04-10 16:59:43');
+(0, '', '', 0, NULL, 11, NULL, 0, 0, 0, 0, NULL, NULL),
+(2, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ1', '1', 1, 'kieu_kinh_1.1.jpg', 1000, 1000, 1, 1, 1, 8, '0000-00-00 00:00:00', '2018-04-10 16:59:57'),
+(3, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ2', '2', 2, 'kieu_kinh_1.1.jpg', 1000, 1000, 1, 1, 1, 0, '0000-00-00 00:00:00', '2018-04-20 03:30:36'),
+(4, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ3', '3', 3, 'cung_loai_1.jpg', 1000, 3000000, 1, 1, 1, 0, '0000-00-00 00:00:00', '2018-04-24 09:39:48'),
+(5, 'T8200696 - K&Iacute;NH THỜI TRANG NAM NỮ4', '4', 4, 'kieu_kinh_2.1.jpg', 1000, 900000, 1, 1, 1, 6, '0000-00-00 00:00:00', '2018-04-24 09:40:02'),
+(6, 'PORSCHE- 18K- P8499 - K&Iacute;NH THỜI TRANG NAM', '5', 5, 'kieu_kinh_1.2.jpg', 1000000, 900000, 3, 1, 321, 2, '2018-04-10 16:15:51', '2018-04-11 20:54:05'),
+(7, 'PORSCHE- 18K- P8499 - K&Iacute;NH THỜI TRANG NAM1', '1', 1, 'kieu_kinh_1.jpg', 1000000, 2147483647, 3, 1, 321, 3, '2018-04-10 16:16:39', '2018-04-11 20:53:14'),
+(8, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ5', '2', 2, 'kieu_kinh_1.jpg', 1000002, 900000, 2, 1, 321, 1, '2018-04-10 16:17:25', '2018-04-24 09:40:19'),
+(9, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ6', '3', 3, 'kieu_kinh_1.jpg', 1000000, 900000, 2, 1, 321, 22, '2018-04-10 16:17:25', '2018-04-10 16:59:43'),
+(10, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ7', '4', 4, 'kieu_kinh_1.jpg', 1000000, 900000, 2, 1, 321, 13, '2018-04-10 16:17:25', '2018-04-10 16:59:43'),
+(11, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ8', '5', 5, 'kieu_kinh_1.jpg', 1000002, 1000002000, 2, 1, 321, 0, '2018-04-10 16:17:25', '2018-04-10 16:59:43');
 
 -- --------------------------------------------------------
 
@@ -251,6 +260,23 @@ INSERT INTO `nhasanxuat` (`id_nsx`, `TenNSX`, `SDTNSX`, `DiaChiNSX`, `img_path`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `question`
+--
+
+CREATE TABLE `question` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `content` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `create_time` datetime NOT NULL,
+  `id_kinh` int(10) UNSIGNED NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `like_comment` int(10) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `taikhoan`
 --
 
@@ -311,7 +337,7 @@ ALTER TABLE `chitiethoadon`
 -- Indexes for table `donhang`
 --
 ALTER TABLE `donhang`
-  ADD PRIMARY KEY (`id_dh`);
+  ADD PRIMARY KEY (`id_hd`);
 
 --
 -- Indexes for table `kinh`
@@ -338,6 +364,12 @@ ALTER TABLE `nhasanxuat`
   ADD PRIMARY KEY (`id_nsx`);
 
 --
+-- Indexes for table `question`
+--
+ALTER TABLE `question`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
@@ -361,17 +393,17 @@ ALTER TABLE `answers`
 -- AUTO_INCREMENT for table `chitiethoadon`
 --
 ALTER TABLE `chitiethoadon`
-  MODIFY `id_hoadon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_hoadon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `donhang`
 --
 ALTER TABLE `donhang`
-  MODIFY `id_dh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_hd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `kinh`
 --
 ALTER TABLE `kinh`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `loaikinh`
 --
@@ -387,6 +419,11 @@ ALTER TABLE `nhaphanphoi`
 --
 ALTER TABLE `nhasanxuat`
   MODIFY `id_nsx` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `question`
+--
+ALTER TABLE `question`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `taikhoan`
 --

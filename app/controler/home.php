@@ -1,138 +1,137 @@
 <?php
-	require_once('app/model/home_model.php');
-	$method=isset($_GET['method']) ? trim($_GET['method']) : "index";
-	switch ($method) {
-		case 'index':
-			list_info_book();
-			break;
-		case 'typebook':
-			list_info_typebook();
-			break;
-		case 'author':
-			list_info_author();
-			break;
-		case 'nxb':
-			list_info_nxb();
-			break;
-		case 'sach_theo_gia':
-			list_info_money();
-			break;
-	}
+require_once('app/model/home_model.php');
+$method=isset($_GET['method']) ? trim($_GET['method']) : "index";
+switch ($method) {
+    case 'index':
+        list_info_sanpham();
+        break;
+    case 'loaiSanPham':
+        list_info_loaisanpham();
+        break;
+    case 'nhaphanphoi':
+        list_info_nhaphanphoi();
+        break;
+    case 'nhasanxuat':
+        list_info_nhasanxuat();
+        break;
+    case 'sp_theo_gia':
+        list_info_money();
+        break;
+}
 
-	//xem danh sách sách
-	function list_info_book()
-	{
-        $dataCount = get_info_all_book_model();
-        $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
-        $page=is_numeric($page) ? $page : 1; 
-        $limit = 9;
-        $total_page = count($dataCount);
-        $link = create_link(BASE_URL, array('cn'=>'home','method'=>'index','page'=>'{page}'));
-        $paginghome = paging($link,$total_page,$page,$limit);
-        $data_book = get_info_all_book_by_page_model($paginghome['start'],$paginghome['limit']);
-		require_once('app/view/home/index_view.php');
-	}
+//xem danh sách sp
+function list_info_sanpham()
+{
+    $dataCount = get_info_all_sanpham_model();
+    $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
+    $page=is_numeric($page) ? $page : 1;
+    $limit = 6;
+    $total_page = count($dataCount);
+    $link = create_link(BASE_URL, array('cn'=>'home','method'=>'index','page'=>'{page}'));
+    $paginghome = paging($link,$total_page,$page,$limit);
+    $data_sanpham = get_info_all_sanpham_by_page_model($paginghome['start'],$paginghome['limit']);
+    require_once('app/view/home/index_home.php');
+}
 
-	//xem sách theo thể loại
-	function list_info_typebook()
-	{
-		$idTypeBook=isset($_GET['idTypeBook']) ? trim($_GET['idTypeBook']) : "";
-		$idTypeBook=is_numeric($idTypeBook) ? $idTypeBook : "";
+//xem sp theo thể loại
+function list_info_loaisanpham()
+{
+    $idloaiSanPham=isset($_GET['idloaiSanPham']) ? trim($_GET['idloaiSanPham']) : "";
+    $idloaiSanPham=is_numeric($idloaiSanPham) ? $idloaiSanPham : "";
 
-		$dataCount = get_info_all_typebook_model($idTypeBook);
-        $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
-        $page=is_numeric($page) ? $page : 1; 
-        $limit = 3;
-        $total_page = count($dataCount);
-        $link = create_link(BASE_URL, array('cn'=>'home','method'=>'typebook','idTypeBook'=>$idTypeBook,'page'=>'{page}'));
-        $paginghome = paging($link,$total_page,$page,$limit);
-        $dataTypeBook = get_info_all_typebook_by_page_model($idTypeBook,$paginghome['start'],$paginghome['limit']);
+    $dataCount = get_info_all_loaisp_model($idloaiSanPham);
+    $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
+    $page=is_numeric($page) ? $page : 1;
+    $limit = 6;
+    $total_page = count($dataCount);
+    $link = create_link(BASE_URL, array('cn'=>'home','method'=>'loaiSanPham','idloaiSanPham'=>$idloaiSanPham,'page'=>'{page}'));
+    $paginghome = paging($link,$total_page,$page,$limit);
+    $dataLoaiSanPham = get_info_all_loaisp_by_page_model($idloaiSanPham,$paginghome['start'],$paginghome['limit']);
 
-		if(!empty($dataTypeBook))
-		{
-			require_once('app/view/home/list_typebook_view.php');
-		}
-		else
-		{
-			require_once('app/view/home/errors_view.php');
-		}
-	}
+    if(!empty($dataLoaiSanPham))
+    {
+        require_once('app/view/home/list_loaisp_view.php');
+    }
+    else
+    {
+        require_once('app/view/home/errors_view.php');
+    }
+}
 
-	//xem sách theo tác giả
-	function list_info_author()
-	{
-		$idAuthorBook=isset($_GET['idAuthor']) ? trim($_GET['idAuthor']) : "";
-		$idAuthorBook=is_numeric($idAuthorBook) ? $idAuthorBook : "";
+//xem sp theo npp
+function list_info_nhaphanphoi()
+{
+    $idNPP=isset($_GET['idnhaphanphoi']) ? trim($_GET['idnhaphanphoi']) : "";
+    $idNPP=is_numeric($idNPP) ? $idNPP : "";
+    $dataCount = get_info_all_nhaphanphoi_model($idNPP);
+    $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
+    $page=is_numeric($page) ? $page : 1;
+    $limit = 6;
+    $total_page = count($dataCount);
+    $link = create_link(BASE_URL, array('cn'=>'home','method'=>'nhaphanphoi','idnhaphanphoi'=>$idNPP,'page'=>'{page}'));
+    $paginghome = paging($link,$total_page,$page,$limit);
+    $dataNPP = get_info_all_nhaphanphoi_by_page_model($idNPP,$paginghome['start'],$paginghome['limit']);
 
-		$dataCount = get_info_all_author_model($idAuthorBook);
-        $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
-        $page=is_numeric($page) ? $page : 1; 
-        $limit = 3;
-        $total_page = count($dataCount);
-        $link = create_link(BASE_URL, array('cn'=>'home','method'=>'author','idAuthor'=>$idAuthorBook,'page'=>'{page}'));
-        $paginghome = paging($link,$total_page,$page,$limit);
-        $dataAuthorBook = get_info_all_authorbook_by_page_model($idAuthorBook,$paginghome['start'],$paginghome['limit']);
+    if(!empty($dataNPP))
+    {
+        require_once('app/view/home/list_author_view.php');
+    }
+    else
+    {
+        require_once('app/view/home/errors_view.php');
+    }
+}
 
-		if(!empty($dataAuthorBook))
-		{
-			require_once('app/view/home/list_author_view.php');
-		}
-		else
-		{
-			require_once('app/view/home/errors_view.php');
-		}
-	}
+//xem sách theo giá tiền
+function list_info_money()
+{
+    $fmoney=isset($_GET['fm']) ? trim($_GET['fm']) : "";
+    $fmoney=is_numeric($fmoney) ? $fmoney : "";
+    $tmoney=isset($_GET['tm']) ? trim($_GET['tm']) : "";
+    $tmoney=is_numeric($tmoney) ? $tmoney : "";
 
-	//xem sách theo giá tiền
-	function list_info_money()
-	{
-		$fmoney=isset($_GET['fm']) ? trim($_GET['fm']) : "";
-		$fmoney=is_numeric($fmoney) ? $fmoney : "";
-		$tmoney=isset($_GET['tm']) ? trim($_GET['tm']) : "";
-		$tmoney=is_numeric($tmoney) ? $tmoney : "";
+    $dataCount = get_info_all_money_model($fmoney,$tmoney);
+    $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
+    $page=is_numeric($page) ? $page : 1;
+    $limit = 6;
+    $total_page = count($dataCount);
+    $link = create_link(BASE_URL, array('cn'=>'home','method'=>'sp_theo_gia','fm'=>$fmoney,'tm'=>$tmoney,'page'=>'{page}'));
+    $paginghome = paging($link,$total_page,$page,$limit);
+    $dataMoneyBook = get_info_all_money_by_page_model($fmoney,$tmoney,$paginghome['start'],$paginghome['limit']);
 
-		$dataCount = get_info_all_money_model($fmoney,$tmoney);
-        $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
-        $page=is_numeric($page) ? $page : 1; 
-        $limit = 3;
-        $total_page = count($dataCount);
-        $link = create_link(BASE_URL, array('cn'=>'home','method'=>'sach_theo_gia','fm'=>$fmoney,'tm'=>$tmoney,'page'=>'{page}'));
-        $paginghome = paging($link,$total_page,$page,$limit);
-        $dataMoneyBook = get_info_all_money_by_page_model($fmoney,$tmoney,$paginghome['start'],$paginghome['limit']);
+    if(!empty($dataMoneyBook))
+    {
+        require_once('app/view/home/list_money_view.php');
+    }
+    else
+    {
+        require_once('app/view/home/errors_view.php');
+    }
+}
 
-		if(!empty($dataMoneyBook))
-		{
-			require_once('app/view/home/list_money_view.php');
-		}
-		else
-		{
-			require_once('app/view/home/errors_view.php');
-		}
-	}
+//xem sp theo nsx
+function list_info_nhasanxuat()
+{
+    $idNSX=isset($_GET['idnhasanxuat']) ? trim($_GET['idnhasanxuat']) : "";
+    $idNSX=is_numeric($idNSX) ? $idNSX : 0;
 
-	//xem sách theo nhà xuất bản
-	function list_info_nxb()
-	{
-		$idNXB=isset($_GET['idNXB']) ? trim($_GET['idNXB']) : "";
-		$idNXB=is_numeric($idNXB) ? $idNXB : 0;
+    $dataCount = get_info_all_nsx_model($idNSX);
+    $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
+    $page=is_numeric($page) ? $page : 1;
+    $limit = 4;
+    $total_page = count($dataCount);
+    $link = create_link(BASE_URL, array('cn'=>'home','method'=>'nsx','idNSX'=>$idNSX,'page'=>'{page}'));
+    $paginghome = paging($link,$total_page,$page,$limit);
+    $dataNSX = get_info_all_nsx_by_page_model($idNSX,$paginghome['start'],$paginghome['limit']);
 
-		$dataCount = get_info_all_nxb_model($idNXB);
-        $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
-        $page=is_numeric($page) ? $page : 1; 
-        $limit = 3;
-        $total_page = count($dataCount);
-        $link = create_link(BASE_URL, array('cn'=>'home','method'=>'nxb','idNXB'=>$idNXB,'page'=>'{page}'));
-        $paginghome = paging($link,$total_page,$page,$limit);
-        $dataNXBBook = get_info_all_nxb_by_page_model($idNXB,$paginghome['start'],$paginghome['limit']);
+    if(!empty($dataNSX))
+    {
+        require_once('app/view/home/list_nhasanxuat_view.php');
+    }
+    else
+    {
+        require_once('app/view/home/errors_view.php');
+    }
+}
 
-        if(!empty($dataNXBBook))
-		{
-			require_once('app/view/home/list_nxb_view.php');
-		}
-		else
-		{
-			require_once('app/view/home/errors_view.php');
-		}
-	}
-	
 ?>

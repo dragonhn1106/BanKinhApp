@@ -34,7 +34,6 @@
                         <?php
                         $i = 1;
                             foreach ($data as $key => $value) {
-                                 //echo '<pre>'; var_dump($value)
                         ?>
                             <tr></td>
                                 <td><?php echo $i ?></td>

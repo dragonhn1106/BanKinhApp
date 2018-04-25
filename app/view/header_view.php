@@ -25,6 +25,9 @@
         <script src="public/js/formValidation.min2.js" type="text/javascript"></script>
         <script src="public/js/index1.js" type="text/javascript"></script>
         <script src="public/js/jquery.bpopup.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="public/OwlCarousel2-2.2.1/dist/assets/owl.carousel.css">
+        <link rel="stylesheet" href="public/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.css">
+        <script src="public/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
         <script type="text/javascript">
           $(document).ready(function() {
           $('.social_active').hoverdir( {} );
@@ -36,10 +39,10 @@
     <body>
         <div class="wrapper">
             <header id="main-header">
-                <section class="container-fluid container">
+                <section class="container-fluid container" >
                     <section class="row-fluid">
                         <section class="span4">
-                            <h1 id="logo"> <a href="?cn=home"><img src="public/images/logo.png"/></a> </h1>
+                            <h1 id="logo"> <a href="?cn=home"><img src="public/images/Untitled-2.png"/></a> </h1>
                         </section>
                         <section class="span8">
                             <ul class="top-nav2">
@@ -51,9 +54,7 @@
                                     <li><a href="logout.php" title="Đăng xuất">Đăng xuất</a></li>
                                 <?php endif; ?>
                                     <li><a href="register.php" title="Đăng ký">Đăng ký</a></li>
-                                    <li><a href="?cn=cart" title="Giỏ hàng">Giỏ hàng <i class="fa fa-shopping-cart" aria-hidden="true"></i><span style="color: red"> &nbsp;&nbsp;&nbsp;<?php echo isset($_SESSION
-                                    ['cart']) ? count($_SESSION
-                                    ['cart']) : 0;?></span></a></li>
+                                    <li><a href="?cn=cart" title="Giỏ hàng">Giỏ hàng <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="qty" style="color: red"> &nbsp;&nbsp;&nbsp;<?php echo isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;  ?></span></a></li>
                             </ul>
                             <div class="col-xs-12 ">
 
@@ -63,7 +64,7 @@
                         </section>
                     </section>
                 </section>
-                <button id="menu1" style="font-size: 23px;background-color: #E5E5E5;height: 40px;line-height: 40px; width: 40px; text-align: center  " class="navbar-toggler pull-xs-right hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target=".menu1" aria-expanded="false">
+                <button id="menu1" style="font-size: 23px;height: 40px;line-height: 40px; width: 40px; text-align: center  " class="navbar-toggler pull-xs-right hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target=".menu1" aria-expanded="false">
                     ☰
                 </button>
                 <nav id="nav">
@@ -82,6 +83,9 @@
             </header>
             <section id="content-holder" class="container-fluid container">
                 <section class="row-fluid">
+                    <div class="blog-sec-slider">
+
+                    </div>
 <script type="text/javascript" charset="utf-8">
     $(document).ready(function() {
        $('#btnSearch').click(function(event) {

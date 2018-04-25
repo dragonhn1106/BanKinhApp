@@ -26,7 +26,7 @@
                         </span>
                     </p>
                     <p>Tác giả:
-                        <a class="nxb" href="?cn=home&method=author&idAuthor=<?php echo $value['id_tg'];?>"><?php echo $value['TenTG'];?></a>
+                        <a class="nxb" href="?cn=home&method=nhaphanphoi&idnhaphanphoi=<?php echo $value['id_npp'];?>"><?php echo $value['TenNPP'];?></a>
                     </p>
                     <p>Thể loại:
                         <a class="nxb" href="?cn=home&method=typebook&idTypeBook=<?php echo $value['id_loai'];?>"><?php echo $value['TenLoai'];?></a>

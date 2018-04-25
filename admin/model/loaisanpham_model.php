@@ -143,6 +143,7 @@
         $data=array();
         $conn=connection();
         $key="%".$keyword."%";
+        $start=1;
         $sql="SELECT * FROM loaikinh AS a WHERE a.status=1 AND a.TenLoai LIKE :keyword LIMIT :start,:limit_a";
         $stmt=$conn->prepare($sql);
         if($stmt)

@@ -2,40 +2,38 @@
         <section class="span3">
             <div class="side-holder">
                 <article class="banner-ad">
-                    <img src="public/images/khuyenmai.jpg" alt=""/>
+                    <img src="public/images/khuyenmai.png" alt=""/>
                 </article>
             </div>
             <div class="side-holder">
                 <article class="shop-by-list">
                     <h2>Danh mục sản phẩm</h2>
                     <div class="side-inner-holder">
-                        <strong class="title">Thể loại</strong>
+                        <strong class="title">Hãng sản xuất</strong>
                         <ul class="side-list">
-                            <?php foreach ($data_typebook as $key => $value) {
-                            ?>
-                                <li <?php echo ($idTypeBook===$value['id_loai']) ? 'style="background-color:#ccc;"': ""; ?>><a href="?cn=home&method=typebook&idTypeBook=<?php echo $value['id_loai'];?>"><?php echo $value['TenLoai'];?></a></li>
+                            <?php foreach ($data_nsx as $key => $value) {
+                                ?>
+                                <li><a href="?cn=home&method=nhasanxuat&idnhasanxuat=<?php echo $value['id_nsx'];?>"><?php echo $value['TenNSX'];?></a></li>
                             <?php } ?>
                         </ul>
-
                         <strong class="title">Giá</strong>
                         <ul class="side-list">
-                            <li><a href="?cn=home&method=sach_theo_gia&fm=1000&tm=5000">Từ 1,000đ - 5,000đ</a></li>
-                            <li><a href="?cn=home&method=sach_theo_gia&fm=5000&tm=10000">Từ 5,000đ - 10,000đ</a></li>
-                            <li><a href="?cn=home&method=sach_theo_gia&fm=10000">Lớn hơn 10,000đ</a></li>
+                            <li><a href="?cn=home&method=sp_theo_gia&fm=1000&tm=500000">Từ 1000đ - 500000đ</a></li>
+                            <li><a href="?cn=home&method=sp_theo_gia&fm=500000&tm=1000000">Từ 500,000đ - 1,000,000đ</a></li>
+                            <li><a href="?cn=home&method=sp_theo_gia&fm=1000000">Lớn hơn 1,000,000đ</a></li>
                         </ul>
-                        <strong class="title">Tác giả</strong>
+                        <strong class="title">Loại sản phẩm</strong>
                         <ul class="side-list">
-                            <?php foreach ($data_author as $key => $value) {
-                            ?>
-                                <li  <?php echo ($idAuthorBook===$value['id_tg']) ? 'style="background-color:#ccc;"': ""; ?>><a href="?cn=home&method=author&idAuthor=<?php echo $value['id_tg'];?>"><?php echo $value['TenTG'];?></a></li>
+                            <?php foreach ($data_loaikinh as $key => $value) {
+                                ?>
+                                <li <?php echo ($idLoaiSP===$value['id_loai']) ? 'style="background-color:#ccc;"': ""; ?>><a href="?cn=home&method=loaiSanPham&idloaiSanPham=<?php echo $value['id_loai'];?>"><?php echo $value['TenLoai'];?></a></li>
                             <?php } ?>
                         </ul>
-
-                        <strong class="title">Nhà xuất bản</strong>
+                        <strong class="title">Nhà Phân Phối</strong>
                         <ul class="side-list">
-                            <?php foreach ($data_nxb as $key => $value) {
-                            ?>
-                                <li><a href="?cn=home&method=nxb&idNXB=<?php echo $value['id_nxb'];?>"><?php echo $value['TenNXB'];?></a></li>
+                            <?php foreach ($data_npp as $key => $value) {
+                                ?>
+                                <li  <?php echo ($idNPP===$value['id_npp']) ? 'style="background-color:#ccc;"': ""; ?>><a href="?cn=home&method=nhaphanphoi&idnhaphanphoi=<?php echo $value['id_npp'];?>"><?php echo $value['TenNPP'];?></a></li>
                             <?php } ?>
                         </ul>
                     </div>
@@ -49,12 +47,12 @@
                             <?php foreach ($data_max_viewer as $key => $value) {
                             ?>
                             <div class="r-img-title">
-                                <a href="?cn=detail&method=index&book=<?php echo $value['id'];?>"><img src="<?php echo UPLOAD_IMG.$value['HinhAnh'];?>"/></a>
+                                <a href="?cn=detail&method=index&sanpham=<?php echo $value['id'];?>"><img src="<?php echo UPLOAD_IMG.$value['HinhAnh'];?>"/></a>
                                 <div class="r-det-holder span6">
-                                    <strong class="r-author">Tên sách: <a href="?cn=detail&method=index&idBook=<?php echo $value['id'];?>"><?php echo $value['TenSach'];?></a></strong>
+                                    <strong class="r-author">Tên sản phẩm: <a href="?cn=detail&method=index&idSanPham=<?php echo $value['id'];?>"><?php echo $value['TenKinh'];?></a></strong>
                                 </div>
                                 <div class="r-det-holder span6">
-                                    <span class="r-by">Tên tác giả:<a href="?cn=home&method=author&idAuthor=<?php echo $value['id_tg'];?>"><?php echo $value['TenTG'];?></a></span>
+                                    <span class="r-by">Tên nhà phân phối:<a href="?cn=home&method=nhaphanphoi&idnhaphanphoi=<?php echo $value['id_npp'];?>"><?php echo $value['TenNPP'];?></a></span>
                                     <span class="r-by">Giá:<?php echo ($value['GiaMoi']!=0) ? number_format($value['GiaMoi']) : number_format($value['GiaCu']);?>&#160;VNĐ</span>
                                     <span class="r-by">Số lượt xem: <?php echo $value['SoLuotXem']; ?></span>
                                 </div>

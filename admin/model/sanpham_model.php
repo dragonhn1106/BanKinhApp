@@ -91,7 +91,7 @@
 	//ham phân trang
 	function get_list_sanpham_by_page($start,$limit,$keyword='')
     {
-        $start =1;
+
         $data=array();
         $conn=connection();
         $key="%".$keyword."%";

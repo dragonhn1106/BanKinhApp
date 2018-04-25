@@ -6,9 +6,9 @@
 	require_once('app/view/header_view.php');
 	define('UPLOAD_IMG','uploads/images/');
 	require_once('app/lips/vn2latin.php');
-	$idTypeBook=isset($_GET['idTypeBook']) ? trim($_GET['idTypeBook']) : "";
-	$idAuthorBook=isset($_GET['idAuthor']) ? trim($_GET['idAuthor']) : "";
-	$idNXB=isset($_GET['idNXB']) ? trim($_GET['idNXB']) : "";
+	$idLoaiSP=isset($_GET['idLoai']) ? trim($_GET['idLoai']) : "";
+	$idNPP=isset($_GET['idNPP']) ? trim($_GET['idNPP']) : "";
+	$idNSX=isset($_GET['idNSX']) ? trim($_GET['idNSX']) : "";
 	if($cn!='cart')
 	{
 		require_once('app/view/menu_view.php');
