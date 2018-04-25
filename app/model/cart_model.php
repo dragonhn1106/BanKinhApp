@@ -62,7 +62,7 @@ function get_all_question_by_idSanPham_model($idKinh)
 {
     $data=array();
     $conn=connection();
-    $sql="SELECT * FROM question AS a WHERE a.status=1 AND a.id_kinh=:idbook ORDER BY a.like_comment DESC";
+    $sql="SELECT * FROM questions AS a WHERE a.status=1 AND a.id_kinh=:idbook ORDER BY a.like_comment DESC";
     $stmt=$conn->prepare($sql);
     if($stmt)
     {
@@ -105,7 +105,7 @@ function get_all_question_popular_model()
 {
     $data=array();
     $conn=connection();
-    $sql="SELECT a.content FROM question AS a ORDER BY a.like_comment DESC LIMIT 0,6";
+    $sql="SELECT a.content FROM questions AS a ORDER BY a.like_comment DESC LIMIT 0,6";
     $stmt=$conn->prepare($sql);
     if($stmt)
     {
@@ -123,18 +123,18 @@ function get_all_question_popular_model()
 }
 
 //add đơn hàng
-function add_orders_customer($idbook,$fullname,$phone,$email,$address,$note,$qty,$money)
+function add_orders_customer($idSanPham,$fullname,$phone,$email,$address,$note,$qty,$money)
 {
     $checkFlag=FALSE;
     $conn=connection();
     $status=0;
     $create_time=date('Y-m-d H:i:s');
     $update_time="";
-    $sql="INSERT INTO donhang(id_kinh,TenKH,SDT,Email,DiaChi,GhiChu,SoLuong,ThanhTien,TrangThai,create_time,update_time) VALUES(:idbook,:fullname,:phone,:email,:address,:note,:qty,:thanhtien,:status,:create_time,:update_time)";
+    $sql="INSERT INTO donhang(id_kinh,TenKH,SDT,Email,DiaChi,GhiChu,SoLuong,ThanhTien,TrangThai,create_time,update_time) VALUES(:idSanPham,:fullname,:phone,:email,:address,:note,:qty,:thanhtien,:status,:create_time,:update_time)";
     $stmt=$conn->prepare($sql);
     if($stmt)
     {
-        $stmt->bindParam(':idbook',$idbook,PDO::PARAM_INT);
+        $stmt->bindParam(':idSanPham',$idSanPham,PDO::PARAM_INT);
         $stmt->bindParam(':fullname',$fullname,PDO::PARAM_STR);
         $stmt->bindParam(':phone',$phone,PDO::PARAM_STR);
         $stmt->bindParam(':email',$email,PDO::PARAM_STR);

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2018 at 02:54 PM
+-- Generation Time: Apr 25, 2018 at 04:56 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -57,7 +57,7 @@ INSERT INTO `admin` (`id_admin`, `username`, `password`, `email`, `phone`, `addr
 CREATE TABLE `answers` (
   `id` int(10) NOT NULL,
   `question_id` int(10) NOT NULL,
-  `status` tinyint(4) NOT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT '1',
   `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `level_user` tinyint(3) NOT NULL,
@@ -65,6 +65,14 @@ CREATE TABLE `answers` (
   `like_answer` int(10) UNSIGNED DEFAULT NULL,
   `content` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `answers`
+--
+
+INSERT INTO `answers` (`id`, `question_id`, `status`, `username`, `email`, `level_user`, `create_time`, `like_answer`, `content`) VALUES
+(1, 25, 1, 'admin', 'dragonhn1xxx@gmail.com', 1, '2018-04-25 16:22:30', 0, 'sao thế bạn'),
+(2, 25, 1, 'admin', 'dragonhn1xxx@gmail.com', 0, '2018-04-25 16:24:06', 0, 'xxxxx');
 
 -- --------------------------------------------------------
 
@@ -127,7 +135,10 @@ INSERT INTO `donhang` (`id_hd`, `id_kinh`, `TenKH`, `SDT`, `Email`, `DiaChi`, `G
 (5, 21, 'duongcv3', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 1, '2018-03-26 13:10:01', '2018-03-26 13:10:03'),
 (6, 21, 'duongcv5', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, 8, 'duongcv', 964014502, 'duongcv1006@gmail.com', 'hanoij', 'dat hanh nhanh', 2, 2000000, 2, '2018-04-20 03:32:25', '0000-00-00 00:00:00'),
-(8, 11, 'duongcv', 964014502, 'duongcv1006@gmail.com', 'hanoij', 'dat hanh nhanh', 1, 1000000, 2, '2018-04-20 03:32:25', '0000-00-00 00:00:00');
+(8, 11, 'duongcv', 964014502, 'duongcv1006@gmail.com', 'hanoij', 'dat hanh nhanh', 1, 1000000, 2, '2018-04-20 03:32:25', '0000-00-00 00:00:00'),
+(9, 8, 'duongcv5', 964014505, 'dragonhn1xxx@gmail.com', 'hanoi', '', 1, 1000002, 0, '2018-04-25 15:08:15', '0000-00-00 00:00:00'),
+(10, 11, 'duongcv5', 964014505, 'dragonhn1xxx@gmail.com', 'hanoi', 'sadsadsa', 1, 1000002, 0, '2018-04-25 15:09:06', '0000-00-00 00:00:00'),
+(11, 11, 'duongcv5', 964014505, 'dragonhn1xxx@gmail.com', 'hanoi', 'nhanh e ơi', 100, 100000200, 0, '2018-04-25 15:37:13', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -164,9 +175,9 @@ INSERT INTO `kinh` (`id`, `TenKinh`, `id_nsx`, `id_npp`, `HinhAnh`, `GiaCu`, `Gi
 (6, 'PORSCHE- 18K- P8499 - K&Iacute;NH THỜI TRANG NAM', '5', 5, 'kieu_kinh_1.2.jpg', 1000000, 900000, 3, 1, 321, 2, '2018-04-10 16:15:51', '2018-04-11 20:54:05'),
 (7, 'PORSCHE- 18K- P8499 - K&Iacute;NH THỜI TRANG NAM1', '1', 1, 'kieu_kinh_1.jpg', 1000000, 2147483647, 3, 1, 321, 3, '2018-04-10 16:16:39', '2018-04-11 20:53:14'),
 (8, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ5', '2', 2, 'kieu_kinh_1.jpg', 1000002, 900000, 2, 1, 321, 1, '2018-04-10 16:17:25', '2018-04-24 09:40:19'),
-(9, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ6', '3', 3, 'kieu_kinh_1.jpg', 1000000, 900000, 2, 1, 321, 22, '2018-04-10 16:17:25', '2018-04-10 16:59:43'),
-(10, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ7', '4', 4, 'kieu_kinh_1.jpg', 1000000, 900000, 2, 1, 321, 13, '2018-04-10 16:17:25', '2018-04-10 16:59:43'),
-(11, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ8', '5', 5, 'kieu_kinh_1.jpg', 1000002, 1000002000, 2, 1, 321, 0, '2018-04-10 16:17:25', '2018-04-10 16:59:43');
+(9, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ6', '3', 3, 'kieu_kinh_1.jpg', 1000000, 900000, 2, 1, 321, 33, '2018-04-10 16:17:25', '2018-04-10 16:59:43'),
+(10, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ7', '4', 4, 'kieu_kinh_1.jpg', 1000000, 900000, 2, 1, 321, 75, '2018-04-10 16:17:25', '2018-04-10 16:59:43'),
+(11, 'PORSCHE-18K-P8181 - GỌNG K&Iacute;NH NỮ8', '5', 5, 'kieu_kinh_1.jpg', 1000002, 1000002000, 2, 1, 321, 44, '2018-04-10 16:17:25', '2018-04-10 16:59:43');
 
 -- --------------------------------------------------------
 
@@ -260,10 +271,10 @@ INSERT INTO `nhasanxuat` (`id_nsx`, `TenNSX`, `SDTNSX`, `DiaChiNSX`, `img_path`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `question`
+-- Table structure for table `questions`
 --
 
-CREATE TABLE `question` (
+CREATE TABLE `questions` (
   `id` int(11) UNSIGNED NOT NULL,
   `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -273,6 +284,15 @@ CREATE TABLE `question` (
   `status` tinyint(4) NOT NULL,
   `like_comment` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `questions`
+--
+
+INSERT INTO `questions` (`id`, `username`, `email`, `content`, `create_time`, `id_kinh`, `status`, `like_comment`) VALUES
+(24, 'admin', 'dragonhn1xxx@gmail.com', '321321321', '2018-04-25 15:55:02', 28, 1, 0),
+(25, 'admin', 'dragonhn1xxx@gmail.com', 'duongcv', '2018-04-25 16:09:52', 10, 1, 0),
+(26, '', '', '', '0000-00-00 00:00:00', 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -364,9 +384,9 @@ ALTER TABLE `nhasanxuat`
   ADD PRIMARY KEY (`id_nsx`);
 
 --
--- Indexes for table `question`
+-- Indexes for table `questions`
 --
-ALTER TABLE `question`
+ALTER TABLE `questions`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -388,7 +408,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `answers`
 --
 ALTER TABLE `answers`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `chitiethoadon`
 --
@@ -398,7 +418,7 @@ ALTER TABLE `chitiethoadon`
 -- AUTO_INCREMENT for table `donhang`
 --
 ALTER TABLE `donhang`
-  MODIFY `id_hd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_hd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `kinh`
 --
@@ -420,10 +440,10 @@ ALTER TABLE `nhaphanphoi`
 ALTER TABLE `nhasanxuat`
   MODIFY `id_nsx` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT for table `question`
+-- AUTO_INCREMENT for table `questions`
 --
-ALTER TABLE `question`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `questions`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `taikhoan`
 --

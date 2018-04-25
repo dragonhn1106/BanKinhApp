@@ -155,6 +155,11 @@ function orders_customer()
                 }
                 if ($add) {
                     $mess = "Đặt hàng thành công! Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất. Trân trọng cảm ơn!";
+                     if (isset($_SESSION['cart'])) {
+                    unset($_SESSION['cart']);
+                    }
+                    $count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+                    echo "<script>$('.qty').text('   '+ $count +'')</script>";
                 } else {
                     $mess = "Có lỗi xảy ra! Vui lòng thử lại";
                 }

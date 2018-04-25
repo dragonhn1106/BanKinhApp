@@ -31,6 +31,7 @@ function list_info_sanpham()
     $paginghome = paging($link,$total_page,$page,$limit);
     $data_sanpham = get_info_all_sanpham_by_page_model($paginghome['start'],$paginghome['limit']);
     require_once('app/view/home/index_home.php');
+
 }
 
 //xem sp theo thể loại
