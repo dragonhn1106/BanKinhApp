@@ -25,7 +25,7 @@ function list_info_sanpham()
     $dataCount = get_info_all_sanpham_model();
     $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
     $page=is_numeric($page) ? $page : 1;
-    $limit = 6;
+    $limit = 9;
     $total_page = count($dataCount);
     $link = create_link(BASE_URL, array('cn'=>'home','method'=>'index','page'=>'{page}'));
     $paginghome = paging($link,$total_page,$page,$limit);
@@ -67,7 +67,7 @@ function list_info_nhaphanphoi()
     $dataCount = get_info_all_nhaphanphoi_model($idNPP);
     $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
     $page=is_numeric($page) ? $page : 1;
-    $limit = 6;
+    $limit = 9;
     $total_page = count($dataCount);
     $link = create_link(BASE_URL, array('cn'=>'home','method'=>'nhaphanphoi','idnhaphanphoi'=>$idNPP,'page'=>'{page}'));
     $paginghome = paging($link,$total_page,$page,$limit);

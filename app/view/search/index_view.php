@@ -6,8 +6,8 @@
  <div id="right">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-3">
-                    <h3 class="text-center" style="background-color:#98b827;color:white;"><i class="fa fa-bookmark" aria-hidden="true"></i>&#160;Sách mới</h3>
+                <div class="col-md-6">
+                    <h3 class="text-center" style="background-color:#98b827;color:white; width: 100%">&#160;Kết quả tìm kiếm sản phẩm</h3>
                 </div>
             </div>
         </div>
@@ -19,16 +19,16 @@
                     <?php if(strtotime($date_time[0])===strtotime(date('Y-m-d H:i:s'))) { ?>
                         <img src="public/images/New_icons.gif" style="width:35px;height:20px;position:absolute;" alt="">
                     <?php } ?>
-                    <a href="?cn=detail&method=index&idBook=<?php echo $value['id'];?>"><img src="<?php echo UPLOAD_IMG.$value['HinhAnh'];?>" alt="Images" class="pro-img"/></a>
+                    <a href="?cn=detail&method=index&sanpham=<?php echo $value['id'];?>"><img src="<?php echo UPLOAD_IMG.$value['HinhAnh'];?>" alt="Images" class="pro-img"/></a>
                     <p>
                         <span class="title">
-                            <a href="?cn=detail&method=index&idBook=<?php echo $value['id'];?>" style="font-weight: bold"><?php echo $value['TenSach'];?></a>
+                            <a href="?cn=detail&method=index&sanpham=<?php echo $value['id'];?>" style="font-weight: bold"><?php echo $value['TenKinh'];?></a>
                         </span>
                     </p>
-                    <p>Tác giả:
+                    <p>Nhà phân phối:
                         <a class="nxb" href="?cn=home&method=nhaphanphoi&idnhaphanphoi=<?php echo $value['id_npp'];?>"><?php echo $value['TenNPP'];?></a>
                     </p>
-                    <p>Thể loại:
+                    <p>Loại sản phẩm:
                         <a class="nxb" href="?cn=home&method=typebook&idTypeBook=<?php echo $value['id_loai'];?>"><?php echo $value['TenLoai'];?></a>
                     </p>
                     <div class="cart-price">

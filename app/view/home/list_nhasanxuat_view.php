@@ -48,8 +48,8 @@
     $(document).ready(function() {
         $("#btnSearch").click(function(event) {
             var page ='<?php echo $page;?>';
-            var idnxbbook='<?php echo $idNXB;?>'
-            window.location.href='<?php echo BASE_URL;?>' + '?cn=home&method=nxb&idNXB=' + idnxbbook + '&page=' + page;
+            var idNSX='<?php echo idNSX;?>'
+            window.location.href='<?php echo BASE_URL;?>' + '?cn=home&method=nhasanxuat&idnhasanxuat=' + idNSX + '&page=' + page;
         });
     });
 </script>

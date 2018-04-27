@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Cửa hàng sách của Dương Chu Văn</title>
+        <title>Cửa hàng kính của Dương Chu Văn</title>
         <meta http-equiv="cache-control" content="no-cache"/>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <meta charset="UTF-8"/>

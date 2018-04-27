@@ -49,7 +49,7 @@
                             <div class="r-img-title">
                                 <a href="?cn=detail&method=index&sanpham=<?php echo $value['id'];?>"><img src="<?php echo UPLOAD_IMG.$value['HinhAnh'];?>"/></a>
                                 <div class="r-det-holder span6">
-                                    <strong class="r-author">Tên sản phẩm: <a href="?cn=detail&method=index&idSanPham=<?php echo $value['id'];?>"><?php echo $value['TenKinh'];?></a></strong>
+                                    <strong class="r-author">Tên sản phẩm: <a href="?cn=detail&method=index&sanpham=<?php echo $value['id'];?>"><?php echo $value['TenKinh'];?></a></strong>
                                 </div>
                                 <div class="r-det-holder span6">
                                     <span class="r-by">Tên nhà phân phối:<a href="?cn=home&method=nhaphanphoi&idnhaphanphoi=<?php echo $value['id_npp'];?>"><?php echo $value['TenNPP'];?></a></span>

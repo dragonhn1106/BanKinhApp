@@ -35,7 +35,7 @@
         </article>
         <div class="book-i-caption">
             <div class="span6 b-img-holder">
-                <span class='zoom' id='ex1'> <img src="<?php echo UPLOAD_IMG.$detail_data['TenKinh'];?>" height="219" width="300" id='jack' alt=''/></span>
+                <span class='zoom' id='ex1'> <img src="<?php echo UPLOAD_IMG.$detail_data['HinhAnh'];?>" height="219" width="300" id='jack' alt=''/></span>
             </div>
             <div class="span6">
                 <strong class="title">Tổng quan</strong>

@@ -14,7 +14,7 @@
                 <?php if(strtotime($date_time[0])===strtotime(date('Y-m-d'))) { ?>
                     <img src="public/images/New_icons.gif" style="width:35px;height:20px;position:absolute;" alt="Images">
                 <?php } ?>
-                <a href="?cn=detail&method=index&book=<?php echo vn2latin($value['TenKinh'],TRUE)."-".$value['id'];?>"><img src="<?php echo UPLOAD_IMG.$value['HinhAnh'];?>" alt="Images" class="pro-img"/></a>
+                <a href="?cn=detail&method=index&sanpham=<?php echo vn2latin($value['TenKinh'],TRUE)."-".$value['id'];?>"><img src="<?php echo UPLOAD_IMG.$value['HinhAnh'];?>" alt="Images" class="pro-img"/></a>
                 <p>
                         <span class="title">
                             <a href="?cn=detail&method=index&sanpham=<?php echo vn2latin($value['TenKinh'],TRUE)."-".$value['id'];?>" style="font-weight: bold"><?php echo $value['TenKinh'];?></a>
@@ -48,8 +48,8 @@
     $(document).ready(function() {
         $("#btnSearch").click(function(event) {
             var page ='<?php echo $page;?>';
-            var idauthorbook='<?php echo $idAuthorBook;?>'
-            window.location.href='<?php echo BASE_URL;?>' + '?cn=home&method=author&idAuthor=' + idauthorbook + '&page=' + page;
+            var idnpp='<?php echo $idnhaphanphoi;?>'
+            window.location.href='<?php echo BASE_URL;?>' + '?cn=home&method=nhaphanphoi&idnhaphanphoi=' + idnhaphanphoi + '&page=' + page;
         });
     });
 </script>
