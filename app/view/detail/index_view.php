@@ -146,7 +146,7 @@
                                 </p>
 
                                 <!--Xử lý data answer-->
-                                <?php foreach ($answer as $an) :?>
+                                <?php foreach ($answer as $an) :  ?>
 
                                     <?php if($an['question_id']==$com['id']) : ?>
                                         <?php if($an['level_user']==0) : ?>
@@ -465,7 +465,7 @@
                         url: 'app/controler/comment.php',
                         type: 'POST',
                         //dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
-                        data: {username: username, email: email, content: content, captcha: captcha, idSanPham: idBook},
+                        data: {username: username, email: email, content: content, captcha: captcha, idSanPham: idSanPham},
                         success: function(data)
                         {
                             if(data=='err1')
@@ -505,7 +505,7 @@
                         url: 'app/controler/comment.php',
                         type: 'POST',
                         //dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
-                        data: {content: content, captcha: captcha, idBook: idBook},
+                        data: {content: content, captcha: captcha, idSanPham: idSanPham},
                         success: function(data)
                         {
                             if(data=='err1')

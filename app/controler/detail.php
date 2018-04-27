@@ -26,6 +26,7 @@ function list_detail()
         $data_question_popular=get_all_question_popular_model();
 
         $comment=get_all_question_by_idSanPham_model($idSanPham);
+        //echo "<pre>"; var_dump($comment);die;
         $answer=get_all_answer_by_model();
 
         require_once('app/view/detail/index_view.php');
@@ -35,10 +36,5 @@ function list_detail()
         require_once('app/view/home/errors_view.php');
     }
 
-    /*$idBook=isset($_GET['idBook']) ? trim($_GET['idBook']) : 0;
-    $idBook=is_numeric($idBook) ? $idBook : 0;
-    //$detail_data=get_info_book_by_id_model($idBook);
-    update_viewer_model($idBook,$detail_data['SoLuotXem']);
-    $data_type_book_same=get_info_type_book_same($idBook,$detail_data['id_loai']);*/
 }
 ?>

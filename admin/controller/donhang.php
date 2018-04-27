@@ -33,21 +33,26 @@ function action_orders()
                 echo 'ok';
                 $info=get_orders_status($id_hd);
                 $status = $info['TrangThai'];
+                list_orders();
 
                 if($status==1)
                 {
                     $add_cthd = add_orders_success_model($id_hd,$status);
+                    list_orders();
                 }
             }
             else
             {
                 echo 'fail';
+                list_orders();
             }
         }
         else
         {
             echo 'err';
+            list_orders();
         }
+        list_orders();
     }
 }
 

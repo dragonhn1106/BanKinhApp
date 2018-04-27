@@ -58,15 +58,15 @@ function get_info_type_sanpham_same($idSanPham,$idLoaiSP)
     disconnection($conn);
     return $data;
 }
-function get_all_question_by_idSanPham_model($idKinh)
+function get_all_question_by_idSanPham_model($idSanPham)
 {
     $data=array();
     $conn=connection();
-    $sql="SELECT * FROM questions AS a WHERE a.status=1 AND a.id_kinh=:idbook ORDER BY a.like_comment DESC";
+    $sql="SELECT * FROM questions AS a WHERE a.status=1 AND a.id_kinh=:idSanPham ORDER BY a.like_comment DESC";
     $stmt=$conn->prepare($sql);
     if($stmt)
     {
-        $stmt->bindParam(':idbook',$idKinh,PDO::PARAM_INT);
+        $stmt->bindParam(':idSanPham',$idSanPham,PDO::PARAM_INT);
         if($stmt->execute())
         {
             if($stmt->rowCount()>0)

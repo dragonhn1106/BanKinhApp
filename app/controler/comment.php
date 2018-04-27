@@ -13,7 +13,7 @@
         $errors['email']=($check==FALSE) ? 'Vui lòng nhập đúng định dạng email' : '';
         $errors['content']=($content=='') ? 'Vui lòng nhập vào bình luận của bạn' : '';
         $errors['captcha']=($captcha !== $_SESSION['captcha']) ? 'Mã captcha không đúng' : ''; // Lay Session Captcha tu comment.php 
-        $errors['idBook']=(is_numeric($idBook) && $idBook > 0) ? '' : 'Có lỗi xảy ra!';
+        $errors['idSanPham']=(is_numeric($idBook) && $idBook > 0) ? '' : 'Có lỗi xảy ra!';
         return $errors;
 	}
 
@@ -61,10 +61,10 @@
 
 			$content=isset($_POST['content']) ? trim($_POST['content']) : '';
 			$captcha=isset($_POST['captcha']) ? trim($_POST['captcha']) : '';
-			$idBook=isset($_POST['idBook']) ? trim($_POST['idBook']) : '';
-			$idBook=is_numeric($idBook) ? $idBook : 0;
+			$idSanPham=isset($_POST['idSanPham']) ? trim($_POST['idSanPham']) : '';
+            $idSanPham=is_numeric($idSanPham) ? $idSanPham : 0;
 
-			$checkData=validate_data_comment($username,$email,$content,$captcha,$idBook);
+			$checkData=validate_data_comment($username,$email,$content,$captcha,$idSanPham);
 			$chk=TRUE;
 			foreach ($checkData as $key => $val) {
 				if(!empty($val))
@@ -76,7 +76,7 @@
 			}
 			if($chk)
 			{
-				$addComment=add_comment_model($idBook,$username,$email,$content);
+				$addComment=add_comment_model($idSanPham,$username,$email,$content);
 
 				if($addComment)
 				{

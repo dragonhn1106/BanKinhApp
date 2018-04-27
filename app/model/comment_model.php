@@ -5,7 +5,7 @@
 		$checkFlag=FALSE;
 		$conn=connection();
 		$create_time=date('Y-m-d H:i:s');
-		$status=0;
+		$status=1;
 		$like_comment=0;
 		$sql="INSERT INTO questions(username,email,content,create_time,id_kinh,status,like_comment) VALUES(:user,:email,:content,:create_time,:idkinh,:status,:like_comment)";
 		$stmt=$conn->prepare($sql);
