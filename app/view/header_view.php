@@ -72,7 +72,7 @@
                         <div class="container-fluid">
                             <ul class="nav navbar-nav">
                                 <li <?php echo ($cn=== 'home') ? "class='active'" : ""; ?>> <a href="?cn=home&method=index">Trang chủ</a> </li>
-                                <li <?php echo ($cn=== 'info') ? "class='active'" : ""; ?>><a href="?cn=info">Giới thiệu</a></li>
+                                <li <?php echo ($cn=== 'info') ? "class='active'" : ""; ?>><a href="?cn=info&method=index">Giới thiệu</a></li>
                                 <li <?php echo ($cn=== 'sale') ? "class='active'" : ""; ?>><a href="?cn=sale">Khuyến mãi</a></li>
                                 <li <?php echo ($cn=== 'support') ? "class='active'" : ""; ?>><a href="?cn=support">Hỗ trợ khách hàng</a></li>
                                 <li <?php echo ($cn=== 'contact') ? "class='active'" : ""; ?>><a href="?cn=contact">Liên hệ & Địa chỉ</a></li>

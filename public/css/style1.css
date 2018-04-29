@@ -25,7 +25,7 @@
 }
 .sach_xem_nhieu img{
     height: 100px;
-    width: 75px;
+    width: 200px;
 }
 input{
     height: 35px !important;
@@ -35,9 +35,17 @@ input{
     text-align: center;    
 }
 #form_gio_hang img{
-    width: 100px ; 
-    height: 150px ;
+    height: 150px;
+    width: 200px;
 }
 #form_gio_hang .center1{
     text-align: center;
+}
+.homenews_title, .homenews_title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    line-height: 20px;
+    text-decoration: none;
+    color: #89b0bc;
+    text-align: left;
 }

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68df8616-6fae-4904-839c-5e52b0a8e424" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controler/info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/info/info_loaisp_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controler/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controler/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/search_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/search_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/detail/index_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/detail/index_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/header_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/header_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/home/list_author_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/home/list_author_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/home/list_nhasanxuat_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/home/list_nhasanxuat_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/menu_right_vew.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/menu_right_vew.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/search/index_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/search/index_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style1.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,29 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/detail/index_view.php">
+      <file leaf-file-name="header_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/header_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="37" column="98" selection-start-line="37" selection-start-column="98" selection-end-line="37" selection-end-column="98" />
+            <state relative-caret-position="1924">
+              <caret line="74" column="121" selection-start-line="74" selection-start-column="121" selection-end-line="74" selection-end-column="121" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_nhasanxuat_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/home/list_nhasanxuat_view.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
-              <caret line="51" column="100" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
+            <state relative-caret-position="598">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_author_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/home/list_author_view.php">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controler/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+            <state relative-caret-position="2938">
+              <caret line="113" column="2" selection-start-line="113" selection-end-line="136" />
             </state>
           </provider>
         </entry>
@@ -52,65 +47,39 @@
       <file leaf-file-name="index_home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/home/index_home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="82" column="19" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="19" />
+            <state relative-caret-position="1352">
+              <caret line="52" column="20" selection-end-line="91" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header_view.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/header_view.php">
+      <file leaf-file-name="info.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controler/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2169">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="520">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/search_model.php">
+      <file leaf-file-name="info_loaisp_view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/info/info_loaisp_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="42" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/search/index_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+            <state relative-caret-position="2028">
+              <caret line="78" column="67" lean-forward="true" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
               <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#4949#4955#0#HTML" expanded="true" />
+                <element signature="e#4956#4962#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controler/menu.php">
+      <file leaf-file-name="style1.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="16" selection-start-line="5" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_right_vew.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/menu_right_vew.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="54" column="123" selection-start-line="54" selection-start-column="110" selection-end-line="54" selection-end-column="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controler/search.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="2002">
+              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -119,8 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>b.id</find>
-      <find>id_sach</find>
       <find>sach</find>
       <find>idHD</find>
       <find>giỏ</find>
@@ -149,6 +116,8 @@
       <find>book</find>
       <find>&amp;book</find>
       <find>span6 b-img-holder</find>
+      <find>.sach_xem_nh</find>
+      <find>var</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\admin</dir>
@@ -160,8 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/view/sanpham/sua_sanpham.php" />
-        <option value="$PROJECT_DIR$/admin/libs/libs.php" />
         <option value="$PROJECT_DIR$/public/js/index1.js" />
         <option value="$PROJECT_DIR$/admin/controller/sanpham.php" />
         <option value="$PROJECT_DIR$/admin/view/home_view.php" />
@@ -181,7 +148,6 @@
         <option value="$PROJECT_DIR$/app/controler/menu.php" />
         <option value="$PROJECT_DIR$/app/model/menu_right_model.php" />
         <option value="$PROJECT_DIR$/app/view/home/errors_view.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/index2.php" />
         <option value="$PROJECT_DIR$/app/view/home/list_nhaphanphoi_view.php" />
         <option value="$PROJECT_DIR$/app/model/home_model.php" />
@@ -201,7 +167,6 @@
         <option value="$PROJECT_DIR$/app/model/cart_model.php" />
         <option value="$PROJECT_DIR$/app/controler/detail.php" />
         <option value="$PROJECT_DIR$/admin/controller/donhang.php" />
-        <option value="$PROJECT_DIR$/public/css/style1.css" />
         <option value="$PROJECT_DIR$/app/controler/home.php" />
         <option value="$PROJECT_DIR$/app/model/search_model.php" />
         <option value="$PROJECT_DIR$/app/controler/search.php" />
@@ -210,7 +175,11 @@
         <option value="$PROJECT_DIR$/app/view/home/list_nhasanxuat_view.php" />
         <option value="$PROJECT_DIR$/app/view/home/list_author_view.php" />
         <option value="$PROJECT_DIR$/app/view/detail/index_view.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/view/header_view.php" />
+        <option value="$PROJECT_DIR$/app/controler/info.php" />
+        <option value="$PROJECT_DIR$/public/css/style1.css" />
+        <option value="$PROJECT_DIR$/app/view/info/info_loaisp_view.php" />
       </list>
     </option>
   </component>
@@ -232,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,13 +243,6 @@
               <item name="BanKinhApp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="detail" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BanKinhApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BanKinhApp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="home" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -287,18 +250,23 @@
               <item name="BanKinhApp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="search" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="info" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BanKinhApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="BanKinhApp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="BanKinhApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BanKinhApp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,12 +327,14 @@
       <workItem from="1524704013755" duration="3602000" />
       <workItem from="1524710766199" duration="221000" />
       <workItem from="1524718010160" duration="1216000" />
-      <workItem from="1524835591617" duration="4688000" />
+      <workItem from="1524835591617" duration="4755000" />
+      <workItem from="1524979293131" duration="5086000" />
+      <workItem from="1524985951439" duration="41000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101145000" />
+    <option name="totallyTimeSpent" value="106339000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,19 +347,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1885906" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905984" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18322147" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -398,6 +366,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,13 +376,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/controller/nhaphanphoi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/controller/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -623,21 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/home_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/helpers/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding>
-            <element signature="e#79#86#1" expanded="true" />
-            <element signature="e#75#82#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,41 +606,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controler/getcaptcha.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controler/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/cart_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="68" column="48" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/home/index_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -700,20 +620,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controler/search.php">
+    <entry file="file://$PROJECT_DIR$/app/view/home/list_nhasanxuat_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="1326">
+          <caret line="51" column="100" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/home/list_author_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/detail/index_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="37" column="98" selection-start-line="37" selection-start-column="98" selection-end-line="37" selection-end-column="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/search/index_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="42">
           <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,36 +657,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/menu_right_vew.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="26">
           <caret line="54" column="123" selection-start-line="54" selection-start-column="110" selection-end-line="54" selection-end-column="123" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/home/list_nhasanxuat_view.php">
+    <entry file="file://$PROJECT_DIR$/app/controler/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="51" column="100" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
+        <state relative-caret-position="104">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/home/list_author_view.php">
+    <entry file="file://$PROJECT_DIR$/app/model/home_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        <state relative-caret-position="260">
+          <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/detail/index_view.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="37" column="98" selection-start-line="37" selection-start-column="98" selection-end-line="37" selection-end-column="98" />
+        <state relative-caret-position="598">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controler/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2938">
+          <caret line="113" column="2" selection-start-line="113" selection-end-line="136" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/header_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2169">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        <state relative-caret-position="1924">
+          <caret line="74" column="121" selection-start-line="74" selection-start-column="121" selection-end-line="74" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controler/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/home/index_home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="52" column="20" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/info/info_loaisp_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2028">
+          <caret line="78" column="67" lean-forward="true" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
+          <folding>
+            <element signature="e#4949#4955#0#HTML" expanded="true" />
+            <element signature="e#4956#4962#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
