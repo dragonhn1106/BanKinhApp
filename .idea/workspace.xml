@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68df8616-6fae-4904-839c-5e52b0a8e424" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controler/info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/view/info/info_loaisp_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/header_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/header_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style1.css" afterDir="false" />
-    </list>
+    <list default="true" id="68df8616-6fae-4904-839c-5e52b0a8e424" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,12 +59,8 @@
       <file leaf-file-name="info_loaisp_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/info/info_loaisp_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2028">
-              <caret line="78" column="67" lean-forward="true" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
-              <folding>
-                <element signature="e#4949#4955#0#HTML" expanded="true" />
-                <element signature="e#4956#4962#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -201,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +256,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,11 +320,12 @@
       <workItem from="1524835591617" duration="4755000" />
       <workItem from="1524979293131" duration="5086000" />
       <workItem from="1524985951439" duration="41000" />
+      <workItem from="1525242883504" duration="148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106339000" />
+    <option name="totallyTimeSpent" value="106487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,8 +338,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1885906" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19127516" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905984" />
@@ -720,12 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/info/info_loaisp_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2028">
-          <caret line="78" column="67" lean-forward="true" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
-          <folding>
-            <element signature="e#4949#4955#0#HTML" expanded="true" />
-            <element signature="e#4956#4962#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
         </state>
       </provider>
     </entry>
