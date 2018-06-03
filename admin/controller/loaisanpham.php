@@ -43,12 +43,11 @@
     {
     	if(isset($_POST['btnSubmit']))
     	{
-    		$nametype=isset($_POST['txtUsername']) ? trim($_POST['txtUsername']) : "";
+    		$nametype=isset($_POST['txtUsername']) ? trim($_POST['txUsername']) : "";
     		$nametype=htmlentities($nametype);
     		$file =isset($_FILES['nameFileImg']) ? $_FILES['nameFileImg'] : "";
     		$img_path=upload_file($file);
     		$img_path=($img_path!==FALSE) ? $img_path : "";
-
     		$checkAdd=validate_add_loaisp($nametype);
     		$checkInfo = TRUE;
             foreach ($checkAdd as $key => $val) {

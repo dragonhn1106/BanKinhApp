@@ -35,6 +35,11 @@
         $name_user=isset($_SESSION['tenhienthi']) ? trim($_SESSION['tenhienthi']) : "";
         return $name_user;
     }
+function get_session_img_user()
+{
+    $img_path=isset($_SESSION['img_path']) ? trim($_SESSION['img_path']) : "";
+    return $img_path;
+}
     //check dang ky
     function validate_signup($user,$pass,$email,$name,$add,$phone)
     {

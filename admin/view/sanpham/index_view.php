@@ -1,4 +1,4 @@
-<style type="text/css">
+    <style type="text/css">
     .table > thead > tr > th{
         text-align: center;
     }

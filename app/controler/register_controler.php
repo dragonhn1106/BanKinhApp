@@ -32,7 +32,7 @@
 			{
 				$mess="Tài khoản không tồn tại";
 			}
-			elseif ($infoUser['Trang_thai'] == 1) {
+			elseif ($infoUser['status'] == 1) {
 				$mess="Tài khoản đã được kích hoạt";
 			}
 			else

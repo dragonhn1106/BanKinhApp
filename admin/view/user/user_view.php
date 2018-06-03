@@ -11,8 +11,8 @@
         <div class="row">
             <input  type="text" placeholder="Nhập từ khóa" name="txtSearch" id="txtSearch" size="50" value="<?php echo htmlentities($keyword);?>" style="text-indent:10px;border: 2px solid white; border-radius: 12px; height: 34px; margin-left: 65%;margin-top: 1%; ">
             <button id="btnSearch" class="btn btn-info"><i class="fa fa-search" aria-hidden="true"></i>&#160;&#160;Tìm kiếm</button>
-            <h1 class="text-center">Quản lý thành viên&#160;&#160;<i class="fa fa-users" aria-hidden="true"></i></h1>
-            <a href="?sk=member&m=add" class="btn btn-success" style="margin: 20px 40px;"><i class="fa fa-plus-square" aria-hidden="true"></i>&#160;&#160;Thêm thành viên</a>
+            <h1 class="text-center">Quản lý thành viên quản trị&#160;&#160;<i class="fa fa-users" aria-hidden="true"></i></h1>
+            <a href="?sk=member&m=add" class="btn btn-success" style="margin: 20px 40px;"><i class="fa fa-plus-square" aria-hidden="true"></i>&#160;&#160;Thêm thành viên quản trị</a>
             <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="table-responsive">
                     <table class="table table-hover table-bordered table-striped">

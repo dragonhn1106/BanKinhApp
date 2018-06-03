@@ -7,5 +7,6 @@
 	unset($_SESSION['tenhienthi']);
 	unset($_SESSION['phone']);
 	unset($_SESSION['address']);
+    unset($_SESSION['img_path']);
 	header("Location: index.php"); 
 ?>

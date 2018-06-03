@@ -4,7 +4,7 @@
 	{
 		$data=array();
 		$conn=connection();
-		$sql="SELECT * FROM taikhoan AS a WHERE a.TenDangNhap=:username AND a.MatKhau=:pass AND a.Trang_thai=1 LIMIT 1";
+		$sql="SELECT * FROM taikhoan AS a WHERE a.TenDangNhap=:username AND a.MatKhau=:pass AND a.status=1 LIMIT 1";
 		$stmt=$conn->prepare($sql);
 
 		if($stmt)

@@ -95,6 +95,7 @@
         $data=array();
         $conn=connection();
         $key="%".$keyword."%";
+
         //$sql="SELECT a.id, a.TenKinh,b.TenNPP,a.status,c.TenNSX,a.HinhAnh,a.GiaCu,a.GiaMoi,d.TenLoai,a.SoLuong,a.SoLuotXem FROM kinh AS a INNER JOIN nhaphanphoi AS b ON a.id_npp=b.id_npp INNER JOIN nhasanxuat AS c ON a.id_nsx=c.id_nsx INNER JOIN loaikinh AS d ON a.id_loai=d.id_loai WHERE a.status=1 AND a.TenKinh LIKE :keyword OR b.TenNPP LIKE :keyword OR c.TenNSX LIKE :keyword OR d.TenLoai LIKE :keyword LIMIT :start,:limit_a";
         $sql = "SELECT a.id,a.TenKinh,b.TenNPP,a. STATUS,c.TenNSX,a.HinhAnh,a.GiaCu,a.GiaMoi,d.TenLoai,a.SoLuong,a.SoLuotXem FROM kinh AS a INNER JOIN nhaphanphoi AS b ON a.id_npp = b.id_npp INNER JOIN nhasanxuat AS c ON a.id_nsx = c.id_nsx INNER JOIN loaikinh AS d ON a.id_loai = d.id_loai WHERE a. STATUS = 1 AND a.TenKinh LIKE :keyword OR b.TenNPP LIKE  :keyword  OR c.TenNSX LIKE :keyword OR d.TenLoai LIKE  :keyword LIMIT  :start , :limit_a";
         $stmt=$conn->prepare($sql);

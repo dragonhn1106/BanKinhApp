@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2018 at 08:38 AM
+-- Generation Time: Jun 03, 2018 at 02:57 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -45,8 +45,9 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `username`, `password`, `email`, `phone`, `address`, `role_admin`, `status`, `img_path`, `create_time`, `update_time`) VALUES
-(1, 'duongcv', '12345', 'dragonhn1106@gmail.com', '0964014502', 'haf nooij', -1, 1, '30594871_1333640823445946_1457325310256087040_o.jpg', '0000-00-00 00:00:00', '2018-04-11 21:17:13'),
-(2, 'admin', '12345', '', '', '', -1, 1, 'kieu_kinh_1.2.jpg', NULL, NULL);
+(1, 'duongcv1006', '12345', 'dragonhn1106@gmail.com', '0964014502', 'haf nooij', -1, 0, 'ava1.jpg', '0000-00-00 00:00:00', '2018-05-31 09:08:07'),
+(2, 'admin', '12345', '', '', '', -1, 1, 'ava2.jpg', NULL, NULL),
+(3, 'duongcv', '123456', 'dragonhn1006@gmail.com', '0964014502', 'mai dịch', -1, 1, 'ava1.jpg', '2018-05-21 09:32:33', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,8 @@ INSERT INTO `answers` (`id`, `question_id`, `status`, `username`, `email`, `leve
 (1, 25, 1, 'admin', 'dragonhn1xxx@gmail.com', 1, '2018-04-25 16:22:30', 0, 'sao thế bạn'),
 (2, 25, 1, 'admin', 'dragonhn1xxx@gmail.com', 0, '2018-04-25 16:24:06', 1, 'xxxxx'),
 (3, 25, 1, 'admin', 'dragonhn1xxx@gmail.com', 0, '2018-04-25 17:29:46', 1, '321321'),
-(4, 32, 1, 'admin', 'dragonhn1xxx@gmail.com', 0, '2018-04-26 03:41:23', 1, 'chuẩn');
+(4, 32, 1, 'admin', 'dragonhn1xxx@gmail.com', 0, '2018-04-26 03:41:23', 1, 'chuẩn'),
+(6, 1, 1, 'admin', '', 1, '2018-05-21 10:11:51', 0, 'to vc ra ý');
 
 -- --------------------------------------------------------
 
@@ -120,7 +122,8 @@ INSERT INTO `chitiethoadon` (`id_hoadon`, `id_dh`, `status`, `create_time`, `upd
 (23, 9, 1, '2018-04-26 03:53:39', '0000-00-00 00:00:00'),
 (24, 8, 1, '2018-04-26 03:53:43', '0000-00-00 00:00:00'),
 (25, 10, 1, '2018-04-26 03:53:46', '0000-00-00 00:00:00'),
-(26, 11, 1, '2018-04-26 03:53:49', '0000-00-00 00:00:00');
+(26, 11, 1, '2018-04-26 03:53:49', '0000-00-00 00:00:00'),
+(27, 6, 1, '2018-05-21 09:58:44', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -149,10 +152,10 @@ CREATE TABLE `donhang` (
 
 INSERT INTO `donhang` (`id_hd`, `id_kinh`, `TenKH`, `SDT`, `Email`, `DiaChi`, `GhiChu`, `SoLuong`, `ThanhTien`, `TrangThai`, `create_time`, `update_time`) VALUES
 (1, 1, 'duongcv', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang nhanh', 100, 6900000, 0, '2018-03-26 13:10:26', '2018-03-26 13:10:29'),
-(2, 2, 'duongcv', 964014502, 'duongcv@gmail.com', 'hanoi', 'dathang', 100, 69000000, 1, '2018-03-26 13:10:20', '2018-03-26 13:10:23'),
-(3, 3, 'duongcv2', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang nhanh', 1000, 6900000, 2, '2018-03-26 13:10:13', '2018-03-26 13:10:17'),
-(4, 2, 'duongcv4', 964014502, 'duongcv@gmail.com', 'hanoi', 'dathang', 2, 12000000, 1, '2018-03-26 13:10:06', '2018-03-26 13:10:10'),
-(5, 21, 'duongcv3', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 0, '2018-03-26 13:10:01', '2018-03-26 13:10:03'),
+(2, 2, 'duongcv', 964014502, 'duongcv@gmail.com', 'hanoi', 'dathang', 100, 69000000, 0, '2018-03-26 13:10:20', '2018-03-26 13:10:23'),
+(3, 3, 'duongcv2', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang nhanh', 1000, 6900000, 0, '2018-03-26 13:10:13', '2018-03-26 13:10:17'),
+(4, 2, 'duongcv4', 964014502, 'duongcv@gmail.com', 'hanoi', 'dathang', 2, 12000000, 0, '2018-03-26 13:10:06', '2018-03-26 13:10:10'),
+(5, 21, 'duongcv3', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 2, '2018-03-26 13:10:01', '2018-03-26 13:10:03'),
 (6, 21, 'duongcv5', 964014502, 'duongcv@gmail.com', 'hanoi', 'dat hang gap', 4, 120000000, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, 8, 'duongcv', 964014502, 'duongcv1006@gmail.com', 'hanoij', 'dat hanh nhanh', 2, 2000000, 2, '2018-04-20 03:32:25', '0000-00-00 00:00:00'),
 (8, 11, 'duongcv', 964014502, 'duongcv1006@gmail.com', 'hanoij', 'dat hanh nhanh', 1, 1000000, 1, '2018-04-20 03:32:25', '0000-00-00 00:00:00'),
@@ -160,8 +163,9 @@ INSERT INTO `donhang` (`id_hd`, `id_kinh`, `TenKH`, `SDT`, `Email`, `DiaChi`, `G
 (10, 11, 'duongcv5', 964014505, 'dragonhn1xxx@gmail.com', 'hanoi', 'sadsadsa', 1, 1000002, 1, '2018-04-25 15:09:06', '0000-00-00 00:00:00'),
 (11, 11, 'duongcv5', 964014505, 'dragonhn1xxx@gmail.com', 'hanoi', 'nhanh e ơi', 100, 100000200, 1, '2018-04-25 15:37:13', '0000-00-00 00:00:00'),
 (12, 10, 'duongcv5', 964014505, 'dragonhn1106@gmail.com', 'hanoi', '', 1, 1000000, 0, '2018-04-26 04:49:32', '0000-00-00 00:00:00'),
-(13, 8, 'duongcv5', 964014505, 'dragonhn1106@gmail.com', 'hanoi', '', 1, 1000002, 0, '2018-04-26 04:49:33', '0000-00-00 00:00:00'),
-(14, 11, 'duongcv5', 964014505, 'dragonhn1106@gmail.com', 'hanoi', '', 1, 1000002, 0, '2018-04-26 04:49:33', '0000-00-00 00:00:00');
+(13, 8, 'duongcv5', 964014505, 'dragonhn1106@gmail.com', 'hanoi', '', 1, 1000002, 2, '2018-04-26 04:49:33', '0000-00-00 00:00:00'),
+(14, 11, 'duongcv5', 964014505, 'dragonhn1106@gmail.com', 'hanoi', '', 1, 1000002, 0, '2018-04-26 04:49:33', '0000-00-00 00:00:00'),
+(15, 35, 'Chu Văn Dương', 964014502, 'duongcv1006@gmaul.com', 'h&agrave; m=nội', 'dsa2dasdsas', 1, 1900000, 0, '2018-05-24 04:35:40', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -190,7 +194,7 @@ CREATE TABLE `kinh` (
 --
 
 INSERT INTO `kinh` (`id`, `TenKinh`, `id_nsx`, `id_npp`, `HinhAnh`, `GiaCu`, `GiaMoi`, `id_loai`, `status`, `SoLuong`, `SoLuotXem`, `create_time`, `date_time`) VALUES
-(1, 'GG0078SK-001', '1', 1, 'GG0078SK-001-9tr.jpg', 9000000, 0, 1, 1, 1000, 0, '2018-04-27 15:23:36', '0000-00-00 00:00:00'),
+(1, 'GG0078SK-001', '1', 1, 'GG3595FS-807JJ-6tr8.jpg', 70000000, 0, 1, 1, 1000, 0, '2018-04-27 15:23:36', '2018-05-16 12:08:26'),
 (2, 'GG3595FS-807JJ', '1', 1, 'GG3595FS-807JJ-6tr8.jpg', 6800000, 0, 2, 1, 1000, 0, '2018-04-27 15:26:00', '0000-00-00 00:00:00'),
 (3, 'GG3658FS-D28ED', '1', 1, 'GG3658FS-D28ED-7tr2.jpg', 7200000, 0, 2, 1, 100, 0, '2018-04-27 15:26:40', '0000-00-00 00:00:00'),
 (4, 'GG3661FS-75QED', '1', 1, 'GG3661FS-75QED-8tr2.JPG', 8200000, 0, 2, 1, 20, 0, '2018-04-27 15:32:01', '0000-00-00 00:00:00'),
@@ -210,10 +214,10 @@ INSERT INTO `kinh` (`id`, `TenKinh`, `id_nsx`, `id_npp`, `HinhAnh`, `GiaCu`, `Gi
 (29, 'SYMPLYDIOR-9E1HA', '3', 1, 'SYMPLYDIOR-9E1HA-7tr.jpg', 7000000, 0, 2, 1, 30, 0, '2018-04-27 15:44:56', '0000-00-00 00:00:00'),
 (30, 'GU400-D-01A', '4', 2, 'GU400-D-01A-2tr6.jpg', 2600000, 0, 2, 1, 200, 0, '2018-04-27 15:45:46', '0000-00-00 00:00:00'),
 (31, 'GU4002-D-05X', '2', 2, 'GU4002-D-05X-2tr6.jpg', 2600000, 0, 1, 1, 100, 0, '2018-04-27 15:46:12', '0000-00-00 00:00:00'),
-(32, 'GU6834-32N-2tr6', '5', 2, 'GU6834-32N-2tr6.jpg', 2600000, 0, 2, 1, 10, 0, '2018-04-27 15:46:42', '0000-00-00 00:00:00'),
+(32, 'GU6834-32N-2tr6', '5', 2, 'GU6834-32N-2tr6.jpg', 2600000, 0, 2, 1, 10, 1, '2018-04-27 15:46:42', '0000-00-00 00:00:00'),
 (33, 'GU6908-01A', '5', 2, 'GU6908-01A-2tr6.jpg', 2600000, 0, 1, 1, 10, 0, '2018-04-27 15:47:27', '0000-00-00 00:00:00'),
 (34, 'GU7433-02C', '5', 2, 'GU7433-02C-1tr9.jpg', 100, 0, 2, 1, 0, 0, '2018-04-27 15:47:54', '0000-00-00 00:00:00'),
-(35, 'GU7433-52C', '2', 2, 'GU7433-52C-1tr9.jpg', 1900000, 0, 2, 1, 10, 5, '2018-04-27 15:48:33', '0000-00-00 00:00:00');
+(35, 'GU7433-52C', '2', 2, 'GU7433-52C-1tr9.jpg', 1900000, 0, 2, 1, 10, 9, '2018-04-27 15:48:33', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -236,7 +240,7 @@ CREATE TABLE `loaikinh` (
 
 INSERT INTO `loaikinh` (`id_loai`, `TenLoai`, `img_path`, `status`, `create_time`, `update_time`) VALUES
 (1, 'Kính thời trang nam', 'kieu_kinh_1.2.jpg', 1, '0000-00-00 00:00:00', '2018-04-04 08:58:54'),
-(2, 'Kính thời trang nữ', 'kieu_kinh_1.2.jpg', 1, '0000-00-00 00:00:00', '2018-04-08 20:16:30'),
+(2, 'K&iacute;nh thời trang nữ', '32207709_2093446190892379_430953384938307584_n.jpg', 1, '0000-00-00 00:00:00', '2018-05-16 12:07:56'),
 (3, 'Kính mắt dành cho trẻ em', 'kieu_kinh_1.2.jpg', 1, '2018-03-26 00:26:55', '2018-03-26 00:26:58'),
 (4, 'Kính thuốc', 'kieu_kinh_1.2.jpg', 1, '2018-03-26 00:27:34', '2018-03-26 00:27:37'),
 (5, 'Kính áp tròng', 'kieu_kinh_1.2.jpg', 1, '2018-03-26 00:27:57', '2018-03-26 00:28:00');
@@ -267,9 +271,7 @@ INSERT INTO `nhaphanphoi` (`id_npp`, `TenNPP`, `SDTNPP`, `DiaChiNPP`, `img_path`
 (2, 'Công Ty TNHH Kính Mắt Việt Nam', '(024)3736535', '138B Giảng Võ, Q. Ba Đình, Hà Nội', 'kieu_kinh_1.2.jpg', NULL, NULL, 1),
 (3, 'Việt Tín - Công Ty TNHH Kính Mắt Việt Tín', '(024)3767316', '345 P. Dịch Vọng, Q. Cầu Giấy, Hà Nội', 'kieu_kinh_1.2.jpg', NULL, NULL, 1),
 (4, 'Kính Mắt VNS', '0949198866', '259 Đội Cấn, Q. Ba Đình, Hà Nội', 'kieu_kinh_1.2.jpg', NULL, NULL, 1),
-(5, 'Thanh Lịch - C&ocirc;ng Ty TNHH K&iacute;nh Mắt Thanh Lịch2', '0964014502', '97 H&agrave;ng B&ocirc;ng, Q. Ho&agrave;n Kiếm, H&agrave; Nội', 'kieu_kinh_1.2.jpg', '0000-00-00 00:00:00', '2018-04-02 00:39:43', 1),
-(6, 'duongcv2', '0964014502', 'h&agrave; nội', 'kieu_kinh_1.2.jpg', '0000-00-00 00:00:00', '2018-04-02 00:40:36', 0),
-(7, 'hay lam', '0964014503', 'hay lắm', 'kieu_kinh_1.2.jpg', '2018-04-04 08:47:33', '0000-00-00 00:00:00', 1);
+(5, 'Thanh Lịch - C&ocirc;ng Ty TNHH K&iacute;nh Mắt Thanh Lịch', '0964014502', '97 H&agrave;ng B&ocirc;ng, Q. Ho&agrave;n Kiếm, H&agrave; Nội', 'kieu_kinh_1.2.jpg', '0000-00-00 00:00:00', '2018-04-02 00:39:43', 1);
 
 -- --------------------------------------------------------
 
@@ -322,10 +324,9 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`id`, `username`, `email`, `content`, `create_time`, `id_kinh`, `status`, `like_comment`) VALUES
-(1, 'admin', 'dragonhn1xxx@gmail.com', 'kính này đẹp không bạn ơi', '2018-04-25 15:55:02', 28, 1, 1),
-(2, 'admin', 'dragonhn1xxx@gmail.com', 'kính này đep đẹp trai đấy', '2018-04-25 16:09:52', 10, 1, 12),
-(3, 'admin', 'dragonhn1xxx@gmail.com', 'kính này còn bao nhiêu cái addmin ơi', '2018-04-25 17:48:13', 10, 1, 1111),
-(32, 'admin', 'dragonhn1xxx@gmail.com', 'nhung xinh đẹp', '2018-04-26 03:40:41', 10, 1, 1);
+(2, 'admin', 'dragonhn1xxx@gmail.com', 'kính này còn bao nhiêu cái add ơi tớ muốn đặt số lượng lớn', '2018-04-25 16:09:52', 28, 1, 12),
+(3, 'admin', 'dragonhn1xxx@gmail.com', 'kính này còn bao nhiêu cái addmin ơi', '2018-04-25 17:48:13', 27, 1, 1111),
+(8, 'éadsadsada', 'dasdsadsa@gmail.com', 'ewqewqewqewqewq', '2018-05-31 10:36:43', 32, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -342,7 +343,7 @@ CREATE TABLE `taikhoan` (
   `SDT` varchar(12) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Email` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Quyen` int(11) NOT NULL,
-  `Trang_thai` tinyint(4) NOT NULL,
+  `status` tinyint(4) NOT NULL,
   `authen_key` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `create_time` datetime DEFAULT NULL,
   `update_time` datetime DEFAULT NULL
@@ -352,17 +353,15 @@ CREATE TABLE `taikhoan` (
 -- Dumping data for table `taikhoan`
 --
 
-INSERT INTO `taikhoan` (`id_tk`, `TenDangNhap`, `MatKhau`, `TenHienThi`, `DiaChi`, `SDT`, `Email`, `Quyen`, `Trang_thai`, `authen_key`, `create_time`, `update_time`) VALUES
-(1, 'duongcv', '123', 'duongcv', 'hanoi', '0964014502', 'Duongcv@gmail.com', 1, 1, 'YVQLYcwzYR0CZcCA9OdB03n8o', '2018-03-26 13:07:19', NULL),
-(2, 'duongcv2', '123', 'duongcv', 'hanoi', '0964014502', 'Duongcv@gmail.com', 1, 1, 'YVQLYcwzYR0CZcCA9OdB03n8o', '2018-03-26 13:07:19', '0000-00-00 00:00:00'),
-(3, 'duongcv3', '123', 'duongcv', 'hanoi', '0964014502', 'Duongcv@gmail.com', 1, 1, 'YVQLYcwzYR0CZcCA9OdB03n8o', '2018-03-26 13:07:19', '0000-00-00 00:00:00'),
-(4, 'duongcv4', '123', 'duongcv', 'hanoi', '0964014502', 'Duongcv@gmail.com', 1, 1, 'YVQLYcwzYR0CZcCA9OdB03n8o', '2018-03-26 13:07:19', '0000-00-00 00:00:00'),
-(5, 'duongcv5', '123', 'duongcv', 'hanoi', '0964014502', 'Duongcv@gmail.com', 1, 1, 'YVQLYcwzYR0CZcCA9OdB03n8o', '2018-03-26 13:07:19', '0000-00-00 00:00:00'),
-(6, 'duongcv6', '123', 'duongcv', 'hanoi', '0964014502', 'Duongcv@gmail.com', 1, 1, 'YVQLYcwzYR0CZcCA9OdB03n8o', '2018-03-26 13:07:19', '0000-00-00 00:00:00'),
-(7, 'duongcv', '827ccb0eea8a706c4c34a16891f84e7b', 'duongcv', 'duongcv', '0964014502', 'abcd@gmail.com', 1, 1, 'ycirJ-kztF-_MMscw-YVQLYcwzYR0CZcCA9OdB03n8o', '2018-04-16 20:09:44', '0000-00-00 00:00:00'),
-(8, 'user', '827ccb0eea8a706c4c34a16891f84e7b', 'duongcv321', 'hanoi', '0964014503', 'abcdf@gmail.com', 1, 1, 'cOvvr1Z3f5fGbJCbspobj9Na0LJye577H01qGOC8JMI', '2018-04-16 20:11:19', '0000-00-00 00:00:00'),
-(10, 'user2', '202cb962ac59075b964b07152d234b70', 'duongcv4', 'hanoi', '0964014504', 'dragonhn1006@gmail.com', 1, 1, '32UwHsSJEa7cx_Dm34Dq6bT-PAsEeW_dlzxijrylYKM', '2018-04-16 20:19:59', '0000-00-00 00:00:00'),
-(11, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'duongcv5', 'hanoi', '0964014505', 'dragonhn1xxx@gmail.com', 1, 1, 'y0tO0d58btKu-F6NogcP5QQwkzPt2F-saQ7KgVGbsM4', '2018-04-16 20:22:05', '0000-00-00 00:00:00');
+INSERT INTO `taikhoan` (`id_tk`, `TenDangNhap`, `MatKhau`, `TenHienThi`, `DiaChi`, `SDT`, `Email`, `Quyen`, `status`, `authen_key`, `create_time`, `update_time`) VALUES
+(1, 'duongcv', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Dương', 'Mai Dịch', '0964014502', 'dragonhn1006@gmail.com', 1, 0, '1S-MhkUDCztZNh2JeUsuXrZvSDLYIArVJY778SaeGlU', '2018-05-22 05:16:35', '0000-00-00 00:00:00'),
+(2, 'duongcv1', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Dương', 'Mai Dịch', '0964014502', 'dragonhn1006@gmail.com', 1, 1, '1S-MhkUDCztZNh2JeUsuXrZvSDLYIArVJY778SaeGlU', '2018-05-22 05:16:35', '0000-00-00 00:00:00'),
+(3, 'duongcv2', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Dương', 'Mai Dịch', '0964014502', 'dragonhn1006@gmail.com', 1, 0, '1S-MhkUDCztZNh2JeUsuXrZvSDLYIArVJY778SaeGlU', '2018-05-22 05:16:35', '0000-00-00 00:00:00'),
+(4, 'duongcv3', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Dương', 'Mai Dịch', '0964014502', 'dragonhn1006@gmail.com', 1, 0, '1S-MhkUDCztZNh2JeUsuXrZvSDLYIArVJY778SaeGlU', '2018-05-22 05:16:35', '0000-00-00 00:00:00'),
+(5, 'duongcv4', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Dương', 'Mai Dịch', '0964014502', 'dragonhn1006@gmail.com', 1, 1, '1S-MhkUDCztZNh2JeUsuXrZvSDLYIArVJY778SaeGlU', '2018-05-22 05:16:35', '0000-00-00 00:00:00'),
+(6, 'duongcv5', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Dương', 'Mai Dịch', '0964014502', 'dragonhn1006@gmail.com', 1, 0, '1S-MhkUDCztZNh2JeUsuXrZvSDLYIArVJY778SaeGlU', '2018-05-22 05:16:35', '0000-00-00 00:00:00'),
+(7, 'duongcv6', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Duong1', 'số nh&agrave; 20 ng&otilde; 342 đường hồ t&ugrave;ng mậu quận bắc từ li&ecirc;m h&agrave; nội', '0964014502', 'dragonhn1006@gmail.com', 1, 1, 'hxzZadYmo-xs3FsssoHHWvBMq-51LZp00DIk9zIJsls', '2018-05-23 10:07:43', '0000-00-00 00:00:00'),
+(8, 'duongcv7', '827ccb0eea8a706c4c34a16891f84e7b', 'Chu Văn Duong1', 'số nh&agrave; 20 ng&otilde; 342 đường hồ t&ugrave;ng mậu quận bắc từ li&ecirc;m h&agrave; nội', '0964014502', 'dragonhn1006@gmail.com', 1, 1, 'hxzZadYmo-xs3FsssoHHWvBMq-51LZp00DIk9zIJsls', '2018-05-23 10:07:43', '0000-00-00 00:00:00');
 
 --
 -- Indexes for dumped tables
@@ -436,22 +435,22 @@ ALTER TABLE `taikhoan`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_admin` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `answers`
 --
 ALTER TABLE `answers`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `chitiethoadon`
 --
 ALTER TABLE `chitiethoadon`
-  MODIFY `id_hoadon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_hoadon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `donhang`
 --
 ALTER TABLE `donhang`
-  MODIFY `id_hd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_hd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `kinh`
 --
@@ -466,7 +465,7 @@ ALTER TABLE `loaikinh`
 -- AUTO_INCREMENT for table `nhaphanphoi`
 --
 ALTER TABLE `nhaphanphoi`
-  MODIFY `id_npp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_npp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `nhasanxuat`
 --
@@ -476,12 +475,12 @@ ALTER TABLE `nhasanxuat`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `id_tk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_tk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -18,7 +18,7 @@
             </div>
         </div>
     <?php } ?>
-        <h1><?php var_dump($data['img_path'])  ?></h1>
+
         <div class="row">
             <a href="?sk=nhaphanphoi&m=index" class="btn btn-success" style="margin: 10px;"><i class="fa fa-th-list" aria-hidden="true"></i>&#160;&#160;Xem danh sách nhà phân phối</a>
             <h1 class="text-center">Sửa thông nhà phân phối&nbsp;&nbsp;<i class="fa fa-pencil-square" aria-hidden="true"></i></h1>

@@ -30,6 +30,12 @@ switch ($c) {
     case 'member':
         require_once('user.php');
         break;
+    case 'comment':
+        require_once('comment.php');
+        break;
+    case 'nguoidung':
+        require_once('nguoidung.php');
+        break;
     default:
         require_once('../view/home_view.php');
         break;

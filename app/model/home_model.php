@@ -146,7 +146,7 @@ function get_info_all_sanpham_by_page_model($start,$limit)
 
 function get_info_all_loaisp_by_page_model($id_loai,$start,$limit)
 {
-    $start=1;
+    $start=0;
     $data=array();
     $conn=connection();
     $sql="SELECT a.id,a.TenKinh,b.id_nsx,b.TenNSX,c.id_npp,c.TenNPP,a.HinhAnh,a.GiaCu,a.GiaMoi,d.id_loai,d.TenLoai,a.SoLuong,a.SoLuotXem,a.create_time,a.date_time FROM kinh AS a INNER JOIN nhasanxuat AS b ON a.id_nsx=b.id_nsx INNER JOIN nhaphanphoi AS c ON a.id_npp=c.id_npp INNER JOIN loaikinh AS d ON a.id_loai=d.id_loai WHERE d.id_loai=:idloai ORDER BY a.create_time DESC LIMIT :start,:limit_a";
@@ -171,7 +171,7 @@ function get_info_all_loaisp_by_page_model($id_loai,$start,$limit)
 
 function get_info_all_nhaphanphoi_by_page_model($id_npp,$start,$limit)
 {
-    $start=1;
+    $start=0;
     $data=array();
     $conn=connection();
     $sql="SELECT a.id,a.TenKinh,b.id_nsx,b.TenNSX,c.id_npp,c.TenNPP,a.HinhAnh,a.GiaCu,a.GiaMoi,d.id_loai,d.TenLoai,a.SoLuong,a.SoLuotXem,a.create_time,a.date_time FROM kinh AS a INNER JOIN nhasanxuat AS b ON a.id_nsx=b.id_nsx INNER JOIN nhaphanphoi AS c ON a.id_npp=c.id_npp INNER JOIN loaikinh AS d ON a.id_loai=d.id_loai WHERE c.id_npp=:idtg ORDER BY a.create_time DESC LIMIT :start,:limit_a";
@@ -222,7 +222,7 @@ function get_info_all_nsx_by_page_model($id_nsx,$start,$limit)
 
 function get_info_all_money_by_page_model($fmoney,$tmoney,$start,$limit)
 {
-    $start=1;
+    $start=0;
     $data=array();
     $conn=connection();
     if($tmoney>0)

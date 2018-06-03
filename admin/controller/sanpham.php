@@ -22,7 +22,7 @@ function list_sp()
         $delete=delete_sanpham_model($idsp);
     }
     $page = (isset($_GET['page'])) ? trim($_GET['page']) : 1;
-    $limit = 4;
+    $limit = 5;
     $keyword = (isset($_GET['keyword'])) ? trim($_GET['keyword']) : "";
     $keyword = htmlentities($keyword);
     $dataCount = list_all_sanpham_model($keyword);

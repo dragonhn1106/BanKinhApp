@@ -31,7 +31,7 @@
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <span class="logo-mini"><b></b></span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>Admin</b></span>
+                    <span class="logo-lg"><b>ADMIN</b></span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top">
@@ -45,14 +45,14 @@
                             <li class="dropdown user user-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="#" class="user-image" alt="">
-                                    <span class="hidden-xs"><?php echo (isset($_SESSION['user'])) ? $_SESSION['user'] : ''; ?></span>
+                                    <span class="hidden-xs"><label>Xin Chào:</label> <?php echo (isset($_SESSION['user'])) ? $_SESSION['user'] : ''; ?></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <!-- User image -->
                                     <li class="user-header">
                                         <img src="<?php var_dump($data['HinhAnh'])?>" class="img-circle" alt="User Image">
                                         <p>
-                                           ADMin - DươngCV
+                                            <?php echo (isset($_SESSION['user'])) ? $_SESSION['user'] : ''; ?>
                                         </p>
                                     </li>
                                     <!-- Menu Footer-->
@@ -82,7 +82,7 @@
 
                         </div>
                         <div class="pull-left info">
-                            <p>Admin</p>
+                            <p style="width: 100%; height: auto;">Trang Quản Trị</p>
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
@@ -117,17 +117,14 @@
                         <li>
                             <a href="?sk=donhang"><i class="fa fa-th"></i>Đơn hàng</a>
                         </li>
-                        <li>
-                            <a href=""><i class="fa fa-th"></i>Chi tiết đơn hàng</a>
-                        </li>
                         <li <?php echo ($c=='member') ? "class='active'" : "class=''";  ?>>
-                            <a href="?sk=member&m=index"><i class="fa fa-th"></i>Thành viên</a>
+                            <a href="?sk=member&m=index"><i class="fa fa-th"></i>Thành viên quản trị</a>
                         </li>
                         <li <?php echo ($c=='comment') ? "class='active'" : "class=''";  ?>>
                             <a href="?sk=comment&m=index" ><i class="fa fa-th"></i>Quản lý bình luận</a>
-                        </li>
-                        <li>
-                            <a><i class="fa fa-th"></i>Quản lý người dùng</a>
+                        </li >
+                        <li <?php echo ($c=='nguoidung') ? "class='active'" : "class=''";  ?> >
+                            <a href="?sk=nguoidung&m=index" ><i class="fa fa-th"></i>Quản lý người dùng</a>
                         </li>
                         <li>
                             <a><i class="fa fa-th"></i>Thống kê</a>
@@ -135,7 +132,7 @@
                         <li>
                             <a><i class="fa fa-th"></i>Báo cáo</a>
                         </li>
-                        
+
                     </ul>
                 </section>
                 <!-- /.sidebar -->

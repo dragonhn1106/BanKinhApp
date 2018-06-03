@@ -50,7 +50,7 @@
                                     <li><a href="login.php" title="Đăng nhập">Đăng nhập</a></li>
                                 <?php endif; ?>
                                 <?php if(isset($_SESSION['username'])) : ?>
-                                    <li><a href="#" title="Xem thông tin tài khoản của bạn">Xin chào, <?php echo $_SESSION['tenhienthi']; ?></a></li>
+                                    <li><strong>Xin chào: <?php echo $_SESSION['tenhienthi']; ?></strong></li>
                                     <li><a href="logout.php" title="Đăng xuất">Đăng xuất</a></li>
                                 <?php endif; ?>
                                     <li><a href="register.php" title="Đăng ký">Đăng ký</a></li>
@@ -73,7 +73,7 @@
                             <ul class="nav navbar-nav">
                                 <li <?php echo ($cn=== 'home') ? "class='active'" : ""; ?>> <a href="?cn=home&method=index">Trang chủ</a> </li>
                                 <li <?php echo ($cn=== 'info') ? "class='active'" : ""; ?>><a href="?cn=info&method=index">Giới thiệu</a></li>
-                                <li <?php echo ($cn=== 'sale') ? "class='active'" : ""; ?>><a href="?cn=sale">Khuyến mãi</a></li>
+                                <li <?php echo ($cn=== 'sale') ? "class='active'" : ""; ?>><a href="?cn=sale">Chính sách bảo hành</a></li>
                                 <li <?php echo ($cn=== 'support') ? "class='active'" : ""; ?>><a href="?cn=support">Hỗ trợ khách hàng</a></li>
                                 <li <?php echo ($cn=== 'contact') ? "class='active'" : ""; ?>><a href="?cn=contact">Liên hệ & Địa chỉ</a></li>
                             </ul>
