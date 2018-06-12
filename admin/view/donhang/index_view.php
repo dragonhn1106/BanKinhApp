@@ -54,8 +54,9 @@
                                             <p class="text-center">Đã xóa&#160;<i class="fa fa-trash-o" aria-hidden="true"></i></p>
                                         <?php endif ?>
                                         <?php if($val['TrangThai']==0) : ?>
-                                            <button type="button" name="btnactive" class="btn btn-success" onclick="actionOrders(<?php echo $val['id_hd'];?>,1);">Active</button>&#160;&#160;
+                                            <button type="button" name="btnactive" class="btn btn-success active" onclick="actionOrders(<?php echo $val['id_hd'];?>,1);">Active</button>&#160;&#160;
                                             <button type="button" name="btndelete" class="btn btn-danger" onclick="actionOrders(<?php echo $val['id_hd'];?>,2);">Delete</button>
+                                            <button type="button" class="btn btn-success inHoaDon" style="display: none">In hóa đơn</button>
                                         <?php endif ?>
 
                                     </td>
@@ -100,4 +101,7 @@
         });
 
     }
+    $('.active').click(function () {
+        $('.inHoaDon').show();
+    });
 </script>
