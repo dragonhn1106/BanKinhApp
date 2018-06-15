@@ -56,18 +56,28 @@
                         </td>
                         <td class="center1"><?php echo $val['TenKinh']; ?></td>
                         <td class="center1"><?php echo number_format($val['GiaCu']); ?></td>
-                        <td class="center1"><input class="soluong1" required pattern="[0-9]{1,3}"
-                                                   title="Số lượng phải là chữ số và nhỏ hơn 4 kí tự"
-                                                   name="txtSoLuong[<?php echo $val['id']; ?>]" size="2" type="text"
-                                                   value="<?php echo $val['qty']; ?>"/></td>
+                        <td class="center1"><input class="soluong1" required pattern="[0-9]{1,3}" title="Số lượng phải là chữ số và nhỏ hơn 4 kí tự" name="txtSoLuong[<?php echo $val['id']; ?>]" size="2" type="text" value="<?php echo $val['qty']; ?>"/></td>
                         <td class="center1 img_gio_hang"><?php echo number_format($val['qty'] * $val['GiaCu']); ?></td>
-                        <td class="center1 xoaHang"><a href="?cn=cart&m=delete&id=<?php echo $val['id']; ?>"> <i
-                                        class="icon-trash"></i></a></td>
+                        <td class="center1 xoaHang"><a href="?cn=cart&m=delete&id=<?php echo $val['id']; ?>"> <i class="icon-trash"></i></a></td>
+
                     </tr>
+
+
                     <?php $i++;} ?>
 
                 <tr>
+                    <td>Tổng tiền:<?php
+                        $total = 0;
+                        foreach ($_SESSION['cart'] as $key => $val){
+                             $subtotal =($val['qty'] * $val['GiaCu']);
+                            $total = ($total + $subtotal);
+                        }?>
+                        <h3><?php echo  $total ;?></h3>
+
+                    </td>
+                    </td>
                     <td colspan="7" style="text-align: right">
+                        <a href="?cn=cart&m=printf" class="btn btn-warning xoaHang">In Hóa Đơn</a>
                         <button type="submit" name="btnSubmit" style="" class="btn btn-info">Cập nhật giỏ hàng</button>
                         <a href="?cn=cart&m=remove" class="btn btn-warning xoaHang">Xóa tất cả</a>
                     </td>

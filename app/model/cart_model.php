@@ -154,4 +154,11 @@ function add_orders_customer($idSanPham,$fullname,$phone,$email,$address,$note,$
     disconnection($conn);
     return $checkFlag;
 }
+
+function getPriceProduct(){
+    $data=array();
+    $conn=connection();
+
+
+}
 ?>

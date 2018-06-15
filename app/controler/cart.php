@@ -20,6 +20,9 @@ switch ($method) {
     case 'orders':
         orders_customer();
         break;
+    case 'printf':
+        in_hoa_don();
+        break;
 }
 
 //Xem giỏ hàng
@@ -30,6 +33,7 @@ function show_cart()
     $email = get_session_email();
     $address = get_session_address();
     require_once('app/view/cart/index_view.php');
+    require_once('app/view/cart/phieuIn.php');
 }
 
 //Thêm sản phẩm vào giỏ hàng
@@ -167,6 +171,10 @@ function orders_customer()
         }
     }
     require_once('app/view/cart/index_view.php');
+
+}
+function  in_hoa_don(){
+    require_once('app/view/cart/phieuIn.php');
 }
 
 ?>
